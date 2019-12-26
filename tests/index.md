@@ -6,5 +6,8 @@
 
 ### 이해하기 쉬운 테스트
 
-###### [1. Given/When/Then에 맞춰 테스트 코드를 작성합니다.](./given-when-then.md)
+1. [Given/When/Then에 맞춰 테스트 코드를 작성합니다.](./given_when_then.md)
+2. [명세는 테스트 코드를 충분히 설명할 수 있어야 합니다.](./describe_fully.md)
+
+
 
