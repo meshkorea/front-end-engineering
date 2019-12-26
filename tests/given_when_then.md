@@ -1,4 +1,4 @@
-# 1. Given/When/Then에 맞춰 테스트 코드를 작성합니다.
+# Given/When/Then에 맞춰 테스트 코드를 작성합니다.
 
 Given/When/Then 템플릿은 테스트를 다음의 세 구역으로 나눕니다.
 

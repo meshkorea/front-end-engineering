@@ -13,3 +13,10 @@
 5. [지나친 잔소리는 좋지 않습니다.](./not_too_much_nipticking.md)
 6. [테스트를 하는 게 의미가 있는 지점을 테스트합니다.](./test_meaningful_points.md)
 
+### 테스트 설계
+
+1. [구현이 아닌 인터페이스를 테스트합니다.](./test.interface.md)
+2. [UI의 구조에 의존하지 마세요.](./do_not_dependent_on_ui_structure.md)
+3. [테스트 대역(Test Double)을 무분별하게 사용하지 않습니다.](./do_not_use_too_much_test_doubles.md)
+4. [에러를 잡지(catch)말고 기대(expect)하세요.](./not_catch_exception_but_expect.md)
+
