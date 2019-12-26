@@ -8,6 +8,8 @@
 
 1. [Given/When/Then에 맞춰 테스트 코드를 작성합니다.](./given_when_then.md)
 2. [명세는 테스트 코드를 충분히 설명할 수 있어야 합니다.](./describe_fully.md)
-
-
+3. [관련성을 기준으로, 테스트를 그룹으로 묶어주세요.](./group_by_relevance.md)
+4. [테스트가 한 가지 일에만 관심을 갖게 해주세요.](./single_responsibility.md)
+5. [지나친 잔소리는 좋지 않습니다.](./not_too_much_nipticking.md)
+6. [테스트를 하는 게 의미가 있는 지점을 테스트합니다.](./test_meaningful_points.md)
 
