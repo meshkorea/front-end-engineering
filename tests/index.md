@@ -25,4 +25,4 @@
 1. [async 함수를 테스트 할 때는 await를 반드시 붙여주세요.](./do_not_miss_await_keyword.md)
 2. [테스트 케이스를 충분히 작성하되, 엣지(Edge) 케이스도 생각하세요!](./write_enough_and_edge_cases.md)
 3. [입력 케이스가 너무 많을 때는 경계를 테스트하세요.](./test_your_boundaries.md)
-
+4. [테스트 케이스 설계 기법을 알아두면 좋아요.](./test_case_design_methods.md)
