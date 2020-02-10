@@ -16,6 +16,8 @@
 
 - [설계 원칙](./design/index.md)
 
+- [커밋 컨벤션](./conventions/commit/index.md)
+
 - [테스트 작성 가이드](./tests/index.md)
 
   
