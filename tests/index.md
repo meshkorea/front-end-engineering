@@ -6,10 +6,6 @@
 
 ### 이해하기 쉬운 테스트
 
-<<<<<<< HEAD
-###### [1. Given/When/Then에 맞춰 테스트 코드를 작성합니다.](./given-when-then.md)
-
-=======
 1. [Given/When/Then에 맞춰 테스트 코드를 작성합니다.](./given_when_then.md)
 2. [명세는 테스트 코드를 충분히 설명할 수 있어야 합니다.](./describe_fully.md)
 3. [관련성을 기준으로, 테스트를 그룹으로 묶어주세요.](./group_by_relevance.md)
@@ -30,4 +26,3 @@
 2. [테스트 케이스를 충분히 작성하되, 엣지(Edge) 케이스도 생각하세요!](./write_enough_and_edge_cases.md)
 3. [입력 케이스가 너무 많을 때는 경계를 테스트하세요.](./test_your_boundaries.md)
 4. [테스트 케이스 설계 기법을 알아두면 좋아요.](./test_case_design_methods.md)
->>>>>>> 887e80276386db5547cde8bd1aa5a70f35449023

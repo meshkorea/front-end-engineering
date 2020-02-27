@@ -18,6 +18,8 @@
 
 - [커밋 컨벤션](./conventions/commit/index.md)
 
+- [코드 리뷰 가이드](./conventions/code-review/index.md)
+
 - [테스트 작성 가이드](./tests/index.md)
 
   
