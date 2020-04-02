@@ -53,4 +53,5 @@ feat: 프렌즈 지원하기 버튼에 GA 이벤트 태그 추가 (PP-2345)
 # 4. 지원 도구
 
 아래의 도구를 이용해 컨벤션 준수 여부를 확인하는 과정을 자동화합니다.
+
 [commitlint](https://github.com/conventional-changelog/commitlint)
