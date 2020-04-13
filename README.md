@@ -14,6 +14,8 @@
 
 - [설계 원칙](./design/index.md)
 
+- [데일리 미팅 가이드](./daily-meeting/index.md)
+
 - [커밋 컨벤션](./conventions/commit/index.md)
 
 - [코드 리뷰 가이드](./conventions/code-review/index.md)
@@ -27,3 +29,4 @@
 이 저장소의 모든 문서는 CC-By 3.0 라이센스를 적용 받습니다. 이 라이센스에 대한 자세한 내용은 <https://creativecommons.org/licenses/by/3.0/>를 참고하세요.
 
 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+
