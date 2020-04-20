@@ -64,42 +64,42 @@ describe("성적 판단", () => {
 
   it("점수가 83점이면 성적은 '우'여야 한다.", () => {
     // given
-    const score = 95;
+    const score = 83;
     // when
     const grade = decideGrade(score);
 
     // then
-    expect(grade).toBe("수");
+    expect(grade).toBe("우");
   });
 
   it("점수가 72점이면 성적은 '미'여야 한다.", () => {
     // given
-    const score = 95;
+    const score = 72;
     // when
     const grade = decideGrade(score);
 
     // then
-    expect(grade).toBe("수");
+    expect(grade).toBe("미");
   });
 
   it("점수가 68점이면 성적은 '양'여야 한다.", () => {
     // given
-    const score = 95;
+    const score = 68;
     // when
     const grade = decideGrade(score);
 
     // then
-    expect(grade).toBe("수");
+    expect(grade).toBe("양");
   });
 
   it("점수가 12점이면 성적은 '가'여야 한다.", () => {
     // given
-    const score = 95;
+    const score = 12;
     // when
     const grade = decideGrade(score);
 
     // then
-    expect(grade).toBe("수");
+    expect(grade).toBe("가");
   });
 });
 ```
