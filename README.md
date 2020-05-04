@@ -22,6 +22,8 @@
 
 - [테스트 작성 가이드](./tests/index.md)
 
+- [회고 가이드](./retrospective/index.md)
+
   
 
 ## 라이센스
