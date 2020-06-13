@@ -11,7 +11,7 @@
 - 함수 선언 바꾸기
 - 변수 캡슐화하기
 - [변수 이름 바꾸기](./catalogs/rename-variable.md)
-- 매개변수 객체 만들기
+- [매개변수 객체 만들기](./catalogs/introduce-parameter-object.md)
 - 여러 함수를 클래스로 묶기
 - 여러 함수를 변환 함수로 묶기
 - 단계 쪼개기
