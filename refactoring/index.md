@@ -26,5 +26,5 @@
 - 클래스 인라인하기
 - 위임 숨기기
 - 중개자 제거하기
-- 알고리즘 교체하기
+- [알고리즘 교체하기](./catalogs/substitute-algorithm.md)
 
