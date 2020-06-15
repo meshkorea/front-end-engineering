@@ -61,6 +61,8 @@ set priority(aString){this._prioirty = new Priority(aString)}
 get priorityString() {return this._priority.toString();}
 ```
 
+### 😍 To be 에 사용된 기능이 추가된 형태
+
 ```javascript
 class Priority {
   constructor(value) {
