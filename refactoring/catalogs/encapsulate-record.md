@@ -8,6 +8,7 @@ organization = { name: "애크미 구스베리", country: "GB" };
 ```
 
 ```js
+// to-be
 class Organization {
   constructor(data) {
     this._name = data.name;
@@ -59,6 +60,8 @@ class Organization {
     - 레코드 캡슐화를 재귀적으로 한다.
         - 장점: 확실하게 모든 부분을 제어할 수 있다.
         - 단점: 작업량이 매우 늘어난다.
+
+### 참고
 - 읽기 전용 Proxy를 만드는 법
     - 책에는 js에서는 어렵다고 쓰여 있지만 `es6`에서는 비교적 간단하게 `proxy`를 제공해 줄 수 있다. 단, 이 방법의 단점은 1depth까지만 쓰기 차단을 지원한다는 점이다.
 
