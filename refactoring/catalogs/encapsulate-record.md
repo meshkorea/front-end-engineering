@@ -66,7 +66,7 @@ class Organization {
     - 책에는 js에서는 어렵다고 쓰여 있지만 `es6`에서는 비교적 간단하게 `proxy`를 제공해 줄 수 있다. 단, 이 방법의 단점은 1depth까지만 쓰기 차단을 지원한다는 점이다.
 
     ```jsx
-    const readonlyHanler = {
+    const readonlyHandler = {
     	set(target, name, value) {
     		throw new Error("Cannot Assgin value to readonly property");
     	}
