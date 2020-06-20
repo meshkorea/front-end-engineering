@@ -8,7 +8,7 @@
 - [함수 인라인하기](./catalogs/inline-function.md)
 - 변수 추출하기
 - 변수 인라인하기
-- 함수 선언 바꾸기
+- [함수 선언 바꾸기](./catalogs/change-function-declaration.md)
 - 변수 캡슐화하기
 - 변수 이름 바꾸기
 - 매개변수 객체 만들기
