@@ -1,6 +1,6 @@
 # 리팩터링
 
-### 리팩터링 카탈로그
+## 리팩터링 카탈로그
 
 리팩터링 기본
 
@@ -22,9 +22,8 @@
 - 컬렉션 캡슐화하기
 - 기본형을 객체로 바꾸기
 - [임시 변수를 질의 함수로 바꾸기](./catalogs/replace-temp-with-query.md)
-- 클래스 추출하기
+- [클래스 추출하기](./catalogs/extract-function.md)
 - 클래스 인라인하기
 - 위임 숨기기
-- 중개자 제거하기
+- [중개자 제거하기](./catalogs/remove-intermediary.md)
 - 알고리즘 교체하기
-
