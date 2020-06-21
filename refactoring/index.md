@@ -18,7 +18,7 @@
 
 캡슐화
 
-- 레코드 캡슐화하기
+- [레코드 캡슐화하기](./catalogs/encapsulate-record.md)
 - [컬렉션 캡슐화하기](./catalogs/encapsulate-collection.md)
 - 기본형을 객체로 바꾸기
 - [임시 변수를 질의 함수로 바꾸기](./catalogs/replace-temp-with-query.md)
