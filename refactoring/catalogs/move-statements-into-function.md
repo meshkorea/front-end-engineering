@@ -8,10 +8,10 @@
 
 ```js
 result.push(`<p>제목: ${person.photo.title}</p>`);
-result = {
+result = [
   ...result,
   ...photoData(person.photo),
-};
+];
 
 function photoData(aPhoto) {
   return [
@@ -24,9 +24,10 @@ function photoData(aPhoto) {
 ### 😍 To be
 
 ```js
-result = {
+result = [
+  ...result,
   ...photoData(person.photo),
-};
+];
 
 function photoData(aPhoto) {
   return [
