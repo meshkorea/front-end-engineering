@@ -4,6 +4,27 @@
 
 ## 🗣 설명
 
+### 🧐 As is
+
+```js
+function checkNumberInRange(n, min, max) {
+  // ...
+}
+
+checkNumberInRange(7, 1, 10);
+```
+
+### 😍 To be
+
+```js
+function checkNumberInRange(n, range) {
+  // ...
+}
+
+const range = new NumberRange(1, 10);
+checkNumberInRange(7, range);
+```
+
 ### ⚙️ 절차
 
 1. 적당한 데이터 구조를 (새 클래스로) 만든다.
