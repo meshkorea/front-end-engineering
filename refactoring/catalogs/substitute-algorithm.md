@@ -23,7 +23,9 @@ data[rowIndex].sort((a, b) => {
 
 ### 😍 To be
 ```typescript
-data[rowIndex].sort((a, b) => (a.startTime || "").localeCompare(b.startTime || ""))
+data[rowIndex].sort((a, b) => {
+ return (a.startTime || "").localeCompare(b.startTime || "");
+})
 ```
 
 ### 📋 상세
