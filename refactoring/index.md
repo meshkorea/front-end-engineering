@@ -24,7 +24,7 @@
 - [임시 변수를 질의 함수로 바꾸기](./catalogs/replace-temp-with-query.md)
 - [클래스 추출하기](./catalogs/extract-function.md)
 - 클래스 인라인하기
-- 위임 숨기기
+- [위임 숨기기](./catalogs/hide-delegate.md)
 - [중개자 제거하기](./catalogs/remove-intermediary.md)
 - 알고리즘 교체하기
 
