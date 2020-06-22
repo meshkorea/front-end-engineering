@@ -26,7 +26,7 @@
 - 클래스 인라인하기
 - [위임 숨기기](./catalogs/hide-delegate.md)
 - [중개자 제거하기](./catalogs/remove-intermediary.md)
-- 알고리즘 교체하기
+- [알고리즘 교체하기](./catalogs/substitute-algorithm.md)
 
 기능 이동
 
