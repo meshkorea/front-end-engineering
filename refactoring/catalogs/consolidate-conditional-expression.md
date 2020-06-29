@@ -49,7 +49,9 @@ function isNotElligibleForDisability() {
 ### 🧐 As is (&& 사용)
 
 ```js
-if (anEmployee.onVacation) if (anEmployee.seiority > 10) return 1;
+if (anEmployee.onVacation) {
+  if (anEmployee.seiority > 10) return 1;
+}
 return 0.5;
 ```
 
