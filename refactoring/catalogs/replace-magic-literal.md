@@ -1,4 +1,4 @@
-# 매직 리터럴 바꾸기 (Replace Magi Literal)
+# 매직 리터럴 바꾸기 (Replace Magic Literal)
 
 매직 리터럴이란 소스 코드에 등장하는 일반적인 리터럴 값.
 
