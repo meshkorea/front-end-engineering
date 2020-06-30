@@ -30,9 +30,9 @@ class Customer {
     this._setDiscountRate(discountRate);
   }
   
-  get discountRate() { return this._contract._discountRate; }
+  get discountRate() { return this._contract.discountRate; }
   // private 함수이므로 set 키워드를 사용하지 않음
-  _setDiscountRate(arg) { this._contract._discountRate = arg; }
+  _setDiscountRate(arg) { this._contract.discountRate = arg; }
 }
 
 class CustomerContract {
