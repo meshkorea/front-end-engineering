@@ -30,7 +30,7 @@
 
 기능 이동
 
-- 함수 옮기기
+- [함수 옮기기](./catalogs/move-function.md)
 - 필드 옮기기
 - [문장을 함수로 옮기기](./catalogs/move-statements-into-function.md)
 - 문장을 호출한 곳으로 옮기기
