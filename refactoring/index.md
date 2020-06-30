@@ -42,7 +42,7 @@
 
 데이터 조직화
 
-- 변수 쪼개기
+- [변수 쪼개기](./catalogs/split-variable.md)
 - 필드 이름 바꾸기
 - 파생 변수를 질의 함수로 바꾸기
 - [참조를 값으로 바꾸기](./catalogs/change-reference-to-value.md)
