@@ -38,7 +38,7 @@
 - 문장 슬라이드하기
 - [반복문 쪼개기](./catalogs/split-loop.md)
 - 반복문을 파이프라인으로 바꾸기
-- 죽은 코드 제거하기
+- [죽은 코드 제거하기](./catalogs/remove-dead-code.md)
 
 데이터 조직화
 
