@@ -16,7 +16,9 @@ for (const i of input) {
 ### 😍 To be
 
 ```js
-const names = input.filter((i) => i.job === "programmer").map((i) => i.name);
+const names = input
+    .filter((i) => i.job === "programmer")
+    .map((i) => i.name);
 ```
 
 ### 📋 상세
