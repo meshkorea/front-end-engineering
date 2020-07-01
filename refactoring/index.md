@@ -30,29 +30,29 @@
 
 기능 이동
 
-- 함수 옮기기
+- [함수 옮기기](./catalogs/move-function.md)
 - 필드 옮기기
 - [문장을 함수로 옮기기](./catalogs/move-statements-into-function.md)
 - 문장을 호출한 곳으로 옮기기
 - [인라인 코드를 함수 호출로 바꾸기](./catalogs/replace-inline-code-with-function-call.md)
 - 문장 슬라이드하기
-- 반복문 쪼개기
+- [반복문 쪼개기](./catalogs/split-loop.md)
 - [반복문을 파이프라인으로 바꾸기](./catalogs/replace-loop-with-pipeline.md)
-- 죽은 코드 제거하기
+- [죽은 코드 제거하기](./catalogs/remove-dead-code.md)
 
 데이터 조직화
 
-- 변수 쪼개기
+- [변수 쪼개기](./catalogs/split-variable.md)
 - 필드 이름 바꾸기
 - 파생 변수를 질의 함수로 바꾸기
-- 참조를 값으로 바꾸기
+- [참조를 값으로 바꾸기](./catalogs/change-reference-to-value.md)
 - 값을 참조로 바꾸기
 - 매직 리터럴 바꾸기
 
 조건부 로직 간소화
 
-- 조건문 분해하기
-- 조건식 통합하기
+- [조건문 분해하기](./catalogs/decompose-conditional.md)
+- [조건식 통합하기](./catalogs/consolidate-conditional-expression.md)
 - 중첩 조건문을 보호 구문으로 바꾸기
 - 조건부 로직을 다형성으로 바꾸기
 - 특이 케이스 추가하기
