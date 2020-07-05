@@ -44,7 +44,7 @@
 
 - [변수 쪼개기](./catalogs/split-variable.md)
 - 필드 이름 바꾸기
-- 파생 변수를 질의 함수로 바꾸기
+- [파생 변수를 질의 함수로 바꾸기](./catalogs/replace-derived-variable-with-query.md)
 - [참조를 값으로 바꾸기](./catalogs/change-reference-to-value.md)
 - 값을 참조로 바꾸기
 - 매직 리터럴 바꾸기
