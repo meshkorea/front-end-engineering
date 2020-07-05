@@ -50,6 +50,7 @@
 - 매직 리터럴 바꾸기
 
 조건부 로직 간소화
+
 - [조건문 분해하기](./catalogs/decompose-conditional.md)
 - [조건식 통합하기](./catalogs/consolidate-conditional-expression.md)
 - 중첩 조건문을 보호 구문으로 바꾸기
@@ -60,7 +61,7 @@
 
 API 리팩터링
 
-- 질의 함수와 변경 함수 분리하기
+- [질의 함수와 변경 함수 분리하기](./catalogs/separate-query-from-modifier.md)
 - 함수 매개변수화하기
 - 플래그 인수 제거하기
 - 객체 통째로 넘기기
