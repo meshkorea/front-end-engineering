@@ -109,4 +109,18 @@ class ExperiencedChinaRating extends Rating {
 5. 수퍼클래스 메서드에서는 기본 동작만 남긴다. 필요에 따라 추상클래스로 선언하거나, 서브클래스에서 처리해야함을 알리도록 에러를 던진다.
 
 ## 📝메모
+### 프로젝트 적용하기
 - `src/common/lib/format/weeklyHours.ts` 의 경우에 적용해 볼 수 있지 않을까?
+
+### 개념
+- 다형성: 객체지향 프로그래밍에서 객체가 다양한 형태를 가질 수 있는 능력
+  - 다형성을 만족하는 서로 다른 객체들은 동일한 요청에 반응할 수 있다.
+  - 하지만 동일한 요청에 대해서 동작하는 방식은 서로 다를 수 있다.
+  - 위의 예제에서 `Rating`과 `ExperiencedChinaRating`는 모두 `captainHistoryRisk`라는 요청에 대해 반응할 수 있다.
+  - 하지만 `captainHistoryRisk`메소드의 동작 방식은 서로 다르다.
+  - `Rating`과 `ExperiencedChinaRating`는 인터페이스는 같기 때문에 호출하는 입장에서는 같은 메소드를 호출(요청)하기만 하면 된다.
+  - 다만 다형성을 갖게되니 이렇게 여러가지 형태의 객체로 구현해서 필요에 따라 다른 동작을 하도록 구현할 수 있는 것이다.
+
+### 참고
+- [위키 - 다형성](https://en.wikipedia.org/wiki/Polymorphism_(computer_science))
+- 객체지향의 사실과 오해(책)
