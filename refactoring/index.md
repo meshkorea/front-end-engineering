@@ -52,7 +52,7 @@
 조건부 로직 간소화
 - [조건문 분해하기](./catalogs/decompose-conditional.md)
 - [조건식 통합하기](./catalogs/consolidate-conditional-expression.md)
-- 중첩 조건문을 보호 구문으로 바꾸기
+- [중첩 조건문을 보호 구문으로 바꾸기](./catalogs/replace-nested-conditional-with-guard-clasuses.md)
 - 조건부 로직을 다형성으로 바꾸기
 - 특이 케이스 추가하기
 - [어서션 추가하기](./catalogs/introduce-assertion.md)
