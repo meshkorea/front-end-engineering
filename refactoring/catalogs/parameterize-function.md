@@ -20,77 +20,11 @@ function fivePercentRaise(aPerson) {
 
 ```js
 function raise(aPerson, factor) {
-  aperson.salary = aPerson.salary.multiply(1+factor);
+  aperson.salary = aPerson.salary.multiply(1 + factor);
 }
 ```
 
 ### 📋 상세
-
-```js
-  <FormColumn>
-    <Input
-      {...form.getProps("accountHolder")}
-      onFocus={this.handleFocus("accoutHolder")}
-      width="100%"
-      {...editabilityProps}
-    />
-  </FormColumn>
-  <FormColumn>
-    <Input
-      {...form.getProps("accountNumber")}
-      onFocus={this.handleFocus("accountNumber")}
-      placeholder="숫자 (- 제외)"
-      width="100%"
-      {...editabilityProps}
-    />
-  </FormColumn>
-  
-```
-
-```js
-
-  this.renderBankInfoForm({
-    placeholder: "예) sample@mail.com",
-    infoKey: "billingEmail",
-    editabilityProps,
-    disabled: isDisabledToEditBankInfo,
-  })
-  
-  ...
-
-  private renderBankInfoForm = ({
-    placeholder,
-    value,
-    infoKey,
-    editabilityProps,
-    disabled,
-  }: RenderInfoFormProps) => {
-    const { storeStore } = this.props;
-    const { businessOwnerForm: form } = storeStore!;
-
-    if (disabled) {
-      return (
-        <Input
-          label={form.getProps(infoKey)!.label}
-          withHintMargin
-          value={value || form.getProps(infoKey)!.value}
-          disabled
-          width="100%"
-        />
-      );
-    }
-    return (
-      <Input
-        {...form.getProps(infoKey)}
-        onFocus={this.handleFocus(infoKey)}
-        width="100%"
-        placeholder={placeholder}
-        {...editabilityProps}
-      />
-    );
-  };
-
-```
 
 ### ⚙️ 절차
 
@@ -100,3 +34,4 @@ function raise(aPerson, factor) {
 4. 테스트 한다.
 5. 매개변수로 받은 값을 사용하도록 함수 본문을 수정한다.하나 수정할 때마다 테스트한다.
 6. 비슷한 다른 함수를 호출하는 코드를 찾아 매개변수화된 함수를 호출하도록 하나씩 수정한다. 하나 수정할 때마다 테스트한다.
+   -> 매개변수화된 함수가 대체할 비슷한 함수와 다르게 동작한다면, 그 비슷한 함수의 동작도 처리할 수 있도록 본문 코드를 적절히 수정 후 진행한다.
