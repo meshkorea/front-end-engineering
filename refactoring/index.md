@@ -67,3 +67,4 @@ API 리팩터링
 - 매개변수를 질의 함수로 바꾸기
 - 질의 함수를 매개변수로 바꾸기
 - 세터 제거하기
+- [수정된 값 반환하기](./catalogs/return-modified-value.md)
