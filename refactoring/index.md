@@ -50,6 +50,7 @@
 - [매직 리터럴 바꾸기](./catalogs/replace-magic-literal.md)
 
 조건부 로직 간소화
+
 - [조건문 분해하기](./catalogs/decompose-conditional.md)
 - [조건식 통합하기](./catalogs/consolidate-conditional-expression.md)
 - [중첩 조건문을 보호 구문으로 바꾸기](./catalogs/replace-nested-conditional-with-guard-clasuses.md)
@@ -67,3 +68,4 @@ API 리팩터링
 - 매개변수를 질의 함수로 바꾸기
 - 질의 함수를 매개변수로 바꾸기
 - 세터 제거하기
+- [생성자를 팩터리 함수로 바꾸기](./catalogs/replace-constructor-with-factory-function.md)
