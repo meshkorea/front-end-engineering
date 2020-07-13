@@ -65,5 +65,5 @@ API 리팩터링
 - [플래그 인수 제거하기](./catalogs/remove-flag-argument.md)
 - 객체 통째로 넘기기
 - 매개변수를 질의 함수로 바꾸기
-- [질의 함수를 매개변수로 바꾸기](./catalogs/replace-command-with-function.md)
+- 질의 함수를 매개변수로 바꾸기
 - 세터 제거하기
