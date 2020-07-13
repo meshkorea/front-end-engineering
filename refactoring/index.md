@@ -50,6 +50,7 @@
 - [매직 리터럴 바꾸기](./catalogs/replace-magic-literal.md)
 
 조건부 로직 간소화
+
 - [조건문 분해하기](./catalogs/decompose-conditional.md)
 - [조건식 통합하기](./catalogs/consolidate-conditional-expression.md)
 - [중첩 조건문을 보호 구문으로 바꾸기](./catalogs/replace-nested-conditional-with-guard-clasuses.md)
@@ -67,3 +68,23 @@ API 리팩터링
 - 매개변수를 질의 함수로 바꾸기
 - 질의 함수를 매개변수로 바꾸기
 - 세터 제거하기
+- 생성자를 팩터리 함수로 바꾸기
+- 함수를 명령으로 바꾸기
+- 명령을 함수로 바꾸기
+- 수정된 값 반환하기
+- 오류 코드를 예외로 바꾸기
+- 예외를 사전확인으로 바꾸기
+
+상속 다루기
+
+- 메서드 올리기
+- 필드 올리기
+- 생성자 본문 올리기
+- 메서드 내리기
+- 필드 내리기
+- 타입 코드를 서브클래스로 바꾸기
+- 서브클래스 제거하기
+- 슈퍼클래스 추출하기
+- 계층 합치기
+- 서브클래스를 위임으로 바꾸기
+- 슈프클래스를 위임으로 바꾸기
