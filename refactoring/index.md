@@ -73,7 +73,7 @@ API 리팩터링
 - 명령을 함수로 바꾸기
 - 수정된 값 반환하기
 - 오류 코드를 예외로 바꾸기
-- 예외를 사전확인으로 바꾸기
+- [예외를 사전확인으로 바꾸기](./catalogs/replace-exception-handling-with-pre-checking.md)
 
 상속 다루기
 
