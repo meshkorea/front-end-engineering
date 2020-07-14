@@ -26,6 +26,8 @@
 
 - [회고 가이드](./retrospective/index.md)
 
+- [기술부채 관리 전략](./technical-debt/README.md)
+
   
 
 ## 라이센스
