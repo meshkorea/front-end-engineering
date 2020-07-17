@@ -30,30 +30,61 @@
 
 기능 이동
 
-- 함수 옮기기
+- [함수 옮기기](./catalogs/move-function.md)
 - 필드 옮기기
 - [문장을 함수로 옮기기](./catalogs/move-statements-into-function.md)
-- 문장을 호출한 곳으로 옮기기
+- [문장을 호출한 곳으로 옮기기](./catalogs/move-statements-to-callers.md)
 - [인라인 코드를 함수 호출로 바꾸기](./catalogs/replace-inline-code-with-function-call.md)
 - 문장 슬라이드하기
-- 반복문 쪼개기
-- 반복문을 파이프라인으로 바꾸기
-- 죽은 코드 제거하기
+- [반복문 쪼개기](./catalogs/split-loop.md)
+- [반복문을 파이프라인으로 바꾸기](./catalogs/replace-loop-with-pipeline.md)
+- [죽은 코드 제거하기](./catalogs/remove-dead-code.md)
 
 데이터 조직화
 
-- 변수 쪼개기
+- [변수 쪼개기](./catalogs/split-variable.md)
 - 필드 이름 바꾸기
-- 파생 변수를 질의 함수로 바꾸기
-- 참조를 값으로 바꾸기
+- [파생 변수를 질의 함수로 바꾸기](./catalogs/replace-derived-variable-with-query.md)
+- [참조를 값으로 바꾸기](./catalogs/change-reference-to-value.md)
 - 값을 참조로 바꾸기
-- 매직 리터럴 바꾸기
+- [매직 리터럴 바꾸기](./catalogs/replace-magic-literal.md)
 
 조건부 로직 간소화
-- 조건문 분해하기
-- 조건식 통합하기
-- 중첩 조건문을 보호 구문으로 바꾸기
-- 조건부 로직을 다형성으로 바꾸기
+
+- [조건문 분해하기](./catalogs/decompose-conditional.md)
+- [조건식 통합하기](./catalogs/consolidate-conditional-expression.md)
+- [중첩 조건문을 보호 구문으로 바꾸기](./catalogs/replace-nested-conditional-with-guard-clasuses.md)
+- [조건부 로직을 다형성으로 바꾸기](replace-conditional-with-polymorphism.md)
 - 특이 케이스 추가하기
-- 어서션 추가하기
-- 제어 플래그를 탈출문으로 바꾸기
+- [어서션 추가하기](./catalogs/introduce-assertion.md)
+- [제어 플래그를 탈출문으로 바꾸기](./catalogs/replace-control-flag-with-break.md)
+
+API 리팩터링
+
+- 질의 함수와 변경 함수 분리하기
+- 함수 매개변수화하기
+- [플래그 인수 제거하기](./catalogs/remove-flag-argument.md)
+- 객체 통째로 넘기기
+- [매개변수를 질의 함수로 바꾸기](./catalogs/replace-parameter-with-query-function.md)
+- 질의 함수를 매개변수로 바꾸기
+- 세터 제거하기
+- 생성자를 팩터리 함수로 바꾸기
+- 함수를 명령으로 바꾸기
+- 명령을 함수로 바꾸기
+- 수정된 값 반환하기
+- 오류 코드를 예외로 바꾸기
+- [예외를 사전확인으로 바꾸기](./catalogs/replace-exception-handling-with-pre-checking.md)
+
+상속 다루기
+
+- 메서드 올리기
+- 필드 올리기
+- 생성자 본문 올리기
+- 메서드 내리기
+- 필드 내리기
+- 타입 코드를 서브클래스로 바꾸기
+- 서브클래스 제거하기
+- 슈퍼클래스 추출하기
+- 계층 합치기
+- 서브클래스를 위임으로 바꾸기
+- 슈프클래스를 위임으로 바꾸기
