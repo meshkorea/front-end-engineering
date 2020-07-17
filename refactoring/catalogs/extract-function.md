@@ -44,3 +44,64 @@ function printDetails(outstanding) {
 4. 원본 함수에서 추출한 코드를 새로 만든 함수를 호출하는 문장으로 바꾼다.
 5. 테스트한다.
 6. 다른 코드에 방금 추출한 것과 똑같거나 비슷한 코드가 없는지 살핀다.
+
+### 추가 예제
+### 🧐 As is
+
+```js
+//BusinessOwner/StoreBusinessOwner.tsx 
+<FormColumn>
+  <Input
+    {...form.getProps("accountHolder")}
+    onFocus={this.handleFocus("accoutHolder")}
+    width="100%"
+    {...editabilityProps}
+  />
+</FormColumn>
+```
+
+### 😍 To be
+
+```js
+<FormRow>
+  <FormColumn>
+    {this.renderBankInfoForm({
+      infoKey: "accountHolder",
+      editabilityProps,
+      disabled: isDisabledToEditBankInfo!,
+    })}
+  </FormColumn>
+<FormRow>
+...
+private renderBankInfoForm = ({
+  placeholder,
+  value,
+  infoKey,
+  editabilityProps,
+  disabled,
+}: RenderInfoFormProps) => {
+  const { storeStore } = this.props;
+  const { businessOwnerForm: form } = storeStore!;
+
+  if (disabled) {
+    return (
+      <Input
+        label={form.getProps(infoKey)!.label}
+        withHintMargin
+        value={value || form.getProps(infoKey)!.value}
+        disabled
+        width="100%"
+      />
+    );
+  }
+  return (
+    <Input
+      {...form.getProps(infoKey)}
+      onFocus={this.handleFocus(infoKey)}
+      width="100%"
+      placeholder={placeholder}
+      {...editabilityProps}
+    />
+  );
+};
+```
