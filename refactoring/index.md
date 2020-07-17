@@ -62,7 +62,7 @@
 API 리팩터링
 
 - 질의 함수와 변경 함수 분리하기
-- 함수 매개변수화하기
+- [함수 매개변수화하기](./catalogs/parameterize-function.md)
 - [플래그 인수 제거하기](./catalogs/remove-flag-argument.md)
 - 객체 통째로 넘기기
 - [매개변수를 질의 함수로 바꾸기](./catalogs/replace-parameter-with-query-function.md)
