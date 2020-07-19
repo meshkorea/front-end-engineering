@@ -7,14 +7,30 @@
 ### 🧐 As is
 
 ```ts
-class WebDeveloper { ... }
-class WebFrontEndTeammate extends WebDeveloper { ... }
+class WebDeveloper {
+  public requestReviewFor(aPullRequest: PullRequest) {
+    ...
+  }
+}
+class WebFrontEndTeammate extends WebDeveloper {
+  public growTogetherBy(someMethods: any) {
+    ...
+  }
+}
 ```
 
 ### 😍 To be
 
 ```ts
-class WebDeveloper { ... }
+class WebDeveloper {
+  public requestReviewFor(aPullRequest: PullRequest) {
+    ...
+  }
+
+  public growTogetherBy(someMethods: any) {
+    ...
+  }
+}
 ```
 
 ### 📋 상세
