@@ -150,7 +150,7 @@ class Party {
 ## 📝메모
 
 ### 템플릿 메서드 패턴
-대상 메서드들의 알고리즘 흐름은 비슷하지만, 세부적인 내용이 다르다면 슈퍼클래스의 메서드에서 흐름을 정의해주고, 세부 동작은 서브클래스에서 구현하도록한다.
+- 대상 메서드들의 알고리즘 흐름은 비슷하지만, 세부적인 내용이 다르다면 슈퍼클래스의 메서드에서 흐름을 정의해주고, 세부 동작은 서브클래스에서 구현하도록한다.
 <details>
   <summary>
   예제
@@ -188,6 +188,7 @@ class Tea extends Beverage {
 ```
 </details>
 
+- 참고: [templateMethod](https://refactoring.com/catalog/formTemplateMethod.html)
 
 ### 서브클래스 책임 오류
 서브클래스가 확장에 대한 인터페이스를 준수하도록 강제하는 오류
