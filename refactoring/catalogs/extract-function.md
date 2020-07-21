@@ -50,58 +50,194 @@ function printDetails(outstanding) {
 
 ```js
 //BusinessOwner/StoreBusinessOwner.tsx 
-<FormColumn>
-  <Input
-    {...form.getProps("accountHolder")}
-    onFocus={this.handleFocus("accoutHolder")}
-    width="100%"
-    {...editabilityProps}
-  />
-</FormColumn>
+<FormRow withMargin>
+  //FormColumn 안에서 반복되는 AttachedFile과 FileInput을 공통 함수로 추출하여 코드량을 줄임.
+  <FormColumn>
+    {enterpriseRegistrationCopyOrigin && (
+      <AttachedFile
+        label={
+          businessOwnerFileForm.labels
+            .enterpriseRegistrationCopy!
+        }
+        filename={enterpriseRegistrationCopyOrigin}
+        onDownload={this.handleFileDownload(
+          enterpriseRegistrationCopyOrigin,
+        )}
+        disabled={isDormant}
+      />
+    )}
+    <IfFullVersion>
+      <FileInput
+        {...businessOwnerFileForm.getProps(
+          "enterpriseRegistrationCopy",
+        )}
+        label={
+          enterpriseRegistrationCopyOrigin
+            ? "새로 첨부하기"
+            : businessOwnerFileForm.labels
+                .enterpriseRegistrationCopy
+        }
+        accept=".jpg,.jpeg,.png,.pdf,.xps,image/x-png,image/jpeg,application/pdf,application/vnd.ms-xpsdocument,application/oxps"
+        name="enterpriseRegistrationCopy"
+        onFileChange={this.handleFileChange}
+        width="100%"
+        {...editabilityProps}
+      />
+    </IfFullVersion>
+  </FormColumn>
+  <FormColumn>
+    {bankAccountCopyOrigin && (
+      <AttachedFile
+        label={businessOwnerFileForm.labels.bankAccountCopy!}
+        filename={bankAccountCopyOrigin}
+        onDownload={this.handlePrivateFileDownload(
+          bankAccountCopyOrigin,
+        )}
+        {...editabilityProps}
+      />
+    )}
+    <IfFullVersion>
+      <FileInput
+        {...businessOwnerFileForm.getProps("bankAccountCopy")}
+        label={
+          bankAccountCopyOrigin
+            ? "새로 첨부하기"
+            : businessOwnerFileForm.labels.bankAccountCopy
+        }
+        accept=".jpg,.jpeg,.png,.pdf,.xps,image/x-png,image/jpeg,application/pdf,application/vnd.ms-xpsdocument,application/oxps"
+        name="bankAccountCopy"
+        onFileChange={this.handleFileChange}
+        width="100%"
+        {...editabilityProps}
+      />
+    </IfFullVersion>
+  </FormColumn>
+  <FormColumn>
+    {ceoIdCardCopyOrigin && (
+      <AttachedFile
+        label={businessOwnerFileForm.labels.ceoIdCardCopy!}
+        filename={ceoIdCardCopyOrigin}
+        onDownload={this.handleFileDownload(
+          ceoIdCardCopyOrigin,
+        )}
+      />
+    )}
+    <IfFullVersion>
+      <FileInput
+        {...businessOwnerFileForm.getProps("ceoIdCardCopy")}
+        label={
+          ceoIdCardCopyOrigin
+            ? "새로 첨부하기"
+            : businessOwnerFileForm.labels.ceoIdCardCopy
+        }
+        accept=".jpg,.jpeg,.png,.pdf,.xps,image/x-png,image/jpeg,application/pdf,application/vnd.ms-xpsdocument,application/oxps"
+        name="ceoIdCardCopy"
+        onFileChange={this.handleFileChange}
+        width="100%"
+        {...editabilityProps}
+      />
+    </IfFullVersion>
+  </FormColumn>
+</FormRow>
 ```
 
 ### 😍 To be
 
 ```js
-<FormRow>
+<FormRow withMargin>
   <FormColumn>
-    {this.renderBankInfoForm({
-      infoKey: "accountHolder",
+    {this.renderFileForm({
+      isOutOfBusiness,
+      isDisabledToDownload: isLiteMode || isDormant,
+      showEmptyMessage: "-",
+      label: businessOwnerFileForm.labels
+        .enterpriseRegistrationCopy!,
+      fileKey: "enterpriseRegistrationCopy",
       editabilityProps,
-      disabled: isDisabledToEditBankInfo!,
     })}
   </FormColumn>
-<FormRow>
+  <FormColumn>
+    {this.renderFileForm({
+      isOutOfBusiness,
+      isDisabledToDownload: isLiteMode || isOutOfBusiness,
+      showEmptyMessage: isOutOfBusiness
+        ? "폐점으로 인해 파기된 통장 사본입니다"
+        : "-",
+      label: businessOwnerFileForm.labels.bankAccountCopy!,
+      fileKey: "bankAccountCopy",
+      editabilityProps,
+    })}
+  </FormColumn>
+  <FormColumn>
+    {this.renderFileForm({
+      isOutOfBusiness,
+      isDisabledToDownload: isLiteMode,
+      showEmptyMessage: "-",
+      label: businessOwnerFileForm.labels.ceoIdCardCopy!,
+      fileKey: "ceoIdCardCopy",
+      editabilityProps,
+    })}
+  </FormColumn>
+</FormRow>
 ...
-private renderBankInfoForm = ({
-  placeholder,
-  value,
-  infoKey,
+private renderFileForm = ({
+  isOutOfBusiness,
+  isDisabledToDownload,
+  showEmptyMessage,
+  label,
+  fileKey,
   editabilityProps,
-  disabled,
-}: RenderInfoFormProps) => {
+}: RenderFileFormProps) => {
   const { storeStore } = this.props;
-  const { businessOwnerForm: form } = storeStore!;
+  const { businessOwnerFileForm } = storeStore!;
+  const isPrivate = fileKey === "bankAccountCopy";
+  const filename = businessOwnerFileForm[`${fileKey}Origin` as FileNameKey];
 
-  if (disabled) {
-    return (
-      <Input
-        label={form.getProps(infoKey)!.label}
-        withHintMargin
-        value={value || form.getProps(infoKey)!.value}
-        disabled
-        width="100%"
-      />
-    );
-  }
-  return (
+  const emptyFile = (
     <Input
-      {...form.getProps(infoKey)}
-      onFocus={this.handleFocus(infoKey)}
+      label={label}
+      withHintMargin
+      value={showEmptyMessage}
+      disabled
       width="100%"
-      placeholder={placeholder}
-      {...editabilityProps}
     />
+  );
+
+  if (isOutOfBusiness && isPrivate) {
+    return emptyFile;
+  }
+
+  return (
+    <>
+      {filename ? (
+        <AttachedFile
+          label={label}
+          filename={filename}
+          onDownload={
+            isPrivate
+              ? this.handlePrivateFileDownload(filename)
+              : this.handleFileDownload(filename)
+          }
+          disabled={isDisabledToDownload}
+        />
+      ) : (
+        emptyFile
+      )}
+
+      {!isOutOfBusiness && (
+        <IfFullVersion>
+          <FileInput
+            {...businessOwnerFileForm.getProps(fileKey)}
+            label="새로 첨부하기"
+            accept=".jpg,.jpeg,.png,.pdf,.xps,image/x-png,image/jpeg,application/pdf,application/vnd.ms-xpsdocument,application/oxps"
+            name={fileKey}
+            onFileChange={this.handleFileChange}
+            width="100%"
+            {...editabilityProps}
+          />
+        </IfFullVersion>
+      )}
+    </>
   );
 };
 ```
