@@ -9,7 +9,7 @@
 
 ```js
 function tenPercentRaise(aPerson) {
-  aPerson.salary = aPerson.salary.multuply(1.1);
+  aPerson.salary = aPerson.salary.multiply(1.1);
 }
 function fivePercentRaise(aPerson) {
   aPerson.salay = aPerson.salary.multiply(1.05;
