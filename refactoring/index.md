@@ -55,17 +55,36 @@
 - [조건식 통합하기](./catalogs/consolidate-conditional-expression.md)
 - [중첩 조건문을 보호 구문으로 바꾸기](./catalogs/replace-nested-conditional-with-guard-clasuses.md)
 - [조건부 로직을 다형성으로 바꾸기](replace-conditional-with-polymorphism.md)
-- 특이 케이스 추가하기
+- [특이 케이스 추가하기](./catalogs/introduce-special-case.md)
 - [어서션 추가하기](./catalogs/introduce-assertion.md)
-- 제어 플래그를 탈출문으로 바꾸기
+- [제어 플래그를 탈출문으로 바꾸기](./catalogs/replace-control-flag-with-break.md)
 
 API 리팩터링
 
 - 질의 함수와 변경 함수 분리하기
-- 함수 매개변수화하기
+- [함수 매개변수화하기](./catalogs/parameterize-function.md)
 - [플래그 인수 제거하기](./catalogs/remove-flag-argument.md)
-- 객체 통째로 넘기기
-- 매개변수를 질의 함수로 바꾸기
-- 질의 함수를 매개변수로 바꾸기
-- 세터 제거하기
+- [객체 통째로 넘기기](./catalogs/preserve-whole-object.md)
+- [매개변수를 질의 함수로 바꾸기](./catalogs/replace-parameter-with-query-function.md)
+- [질의 함수를 매개변수로 바꾸기](./catalogs/replace-query-with-parameter.md)
+- [세터 제거하기](./catalogs/remove-setting-method.md)
 - [생성자를 팩터리 함수로 바꾸기](./catalogs/replace-constructor-with-factory-function.md)
+- [함수를 명령으로 바꾸기](./catalogs/replace-function-with-command.md)
+- [명령을 함수로 바꾸기](./catalogs/replace-command-with-function.md)
+- [수정된 값 반환하기](./catalogs/return-modified-value.md)
+- 오류 코드를 예외로 바꾸기
+- [예외를 사전확인으로 바꾸기](./catalogs/replace-exception-handling-with-pre-checking.md)
+
+상속 다루기
+
+- 메서드 올리기
+- 필드 올리기
+- 생성자 본문 올리기
+- 메서드 내리기
+- 필드 내리기
+- 타입 코드를 서브클래스로 바꾸기
+- 서브클래스 제거하기
+- 슈퍼클래스 추출하기
+- 계층 합치기
+- 서브클래스를 위임으로 바꾸기
+- 슈프클래스를 위임으로 바꾸기
