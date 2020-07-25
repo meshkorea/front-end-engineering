@@ -68,7 +68,7 @@ API 리팩터링
 - [매개변수를 질의 함수로 바꾸기](./catalogs/replace-parameter-with-query-function.md)
 - [질의 함수를 매개변수로 바꾸기](./catalogs/replace-query-with-parameter.md)
 - [세터 제거하기](./catalogs/remove-setting-method.md)
-- 생성자를 팩터리 함수로 바꾸기
+- [생성자를 팩터리 함수로 바꾸기](./catalogs/replace-constructor-with-factory-function.md)
 - [함수를 명령으로 바꾸기](./catalogs/replace-function-with-command.md)
 - [명령을 함수로 바꾸기](./catalogs/replace-command-with-function.md)
 - [수정된 값 반환하기](./catalogs/return-modified-value.md)
