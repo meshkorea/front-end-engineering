@@ -62,7 +62,7 @@ class Employee {
 </details>
 
 <ol>
-<li><a herf="./change-function-declaration.md">6.6 타입 코드를 자가 캡슐화</a> 한다.
+<li><a herf="./encapsulate-variable.md">6.6 타입 코드를 자가 캡슐화</a> 한다.
 <details>
 <summary>예제</summary>
 
@@ -102,7 +102,7 @@ class Engineer extends Employee {
 타입 코드와 서브클래스를 매핑하는 분기 로직을 만든다.
 <ul>
   <li>
-  직접 상속일 때는 [11.8 생성자를 팩터리 함수로 바꾸기]()를 이용해서 팩터리 함수에 서브클래스 선택 로직을 작성한다.
+  직접 상속일 때는 <a href="./replace-constructor-with-factory-function.md">11.8 생성자를 팩터리 함수로 바꾸기</a>를 이용해서 팩터리 함수에 서브클래스 선택 로직을 작성한다.
   <details>
     <summary>예제</summary>
 
@@ -127,7 +127,7 @@ function createEmployee(name, type) {
 <li>타입 코드 각각에 대해 2~4를 반복한다.</li>
 <li>타입 코드 필드와 슈퍼클래스의 타입 getter를 제거한뒤 테스트한다.</li>
 <li>
-슈퍼클래스에서 타입 코드를 사용하지 않으니 생성자에서 타입 코드 인수를 삭제한다. ([6.5 함수 선언 바꾸기]())
+슈퍼클래스에서 타입 코드를 사용하지 않으니 생성자에서 타입 코드 인수를 삭제한다. (<a href="./change-function-declaration.md">6.5 함수 선언 바꾸기</a>)
 <details>
   <summary>예제</summary>
 
@@ -153,20 +153,7 @@ function createEmployee(name, type) {
 
 </details>
 </li>
-<li>서브클래스의 타입 getter를 호출하는 곳이 아직 남아있다면, [10.4 조건부 로직을 다형성으로 바꾸기](), [12.4 메서드 내리기]()를 적용하고, 호출하는 곳이 모두 없어지면 서브클래스에서도 타입 getter를 삭제한다.
-
-<details>
-  <summary>예제</summary>
-
-```typescript
-예를들어, 직원 월급을 계산하는 클래스가 있을때, 월급액을 알려주는 메서드에서 엔지니어 타입일 경우에만 특정 인센티브를 추가한다고 한다.
-그러면 기존에는 Employee 클래스 인스턴스의 타입 getter 를 사용해서 조건부 로직을 수행했을 것이다.
-하지만 이제는 팩토리 함수를 이용해서 타입을 전달하고, 생성된 직원 인스턴스를 바로 사용하면 엔지니어 인스턴스를 이용하게 되므로 인스턴스 타입을 사용할 필요가 없다.
-또한 이 월급 알려주는 메서드를 아예 월급 클래스에서 서브 클래스로 인센티브 월급 클래스를 만들고, 계산액 알려주는 메서드를 서브클래스로 내린 뒤에는 특정 인센티브가 필요한 직원타입 을 전달해서 팩토리 함수에서 직원 인스턴스를 생성하거나.
-=> 이 리팩터링 방식의 의미(장점)이 무엇인지? 책임..?
-```
-
-</details>
+<li>서브클래스의 타입 getter를 호출하는 곳이 아직 남아있다면, <a href="./replace-conditional-with-polymorphism.md">10.4 조건부 로직을 다형성으로 바꾸기</a>, <a href="push-down-method.md">12.4 메서드 내리기</a>를 적용하고, 호출하는 곳이 모두 없어지면 서브클래스에서도 타입 getter를 삭제한다.
 </li>
 </ol>
 
@@ -210,7 +197,7 @@ class Employee {
 
 <ol>
   <li>
-    [7.3 기본형을 객체로 바꾸기]()를 이용해 타입 코드를 객체로 바꾼뒤 사용하도록 변경한다.
+    <a href="./replace-primitive-with-object.md">7.3 기본형을 객체로 바꾸기</a>를 이용해 타입 코드를 객체로 바꾼뒤 사용하도록 변경한다.
     <details>
       <summary>예제</summary>
 
