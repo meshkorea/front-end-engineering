@@ -29,7 +29,7 @@ monthCharge = new ChargeCalculator(customer, usage, provider).charge;
 ### 😍 To be
 
 ```js
-function charge(customer, usage, _provider) {
+function charge(customer, usage, provider) {
   const baseCharge = customer.baseRate * usage;
   return baseCharge + provider.connectionCharge;
 }
