@@ -72,7 +72,7 @@ API 리팩터링
 - [함수를 명령으로 바꾸기](./catalogs/replace-function-with-command.md)
 - [명령을 함수로 바꾸기](./catalogs/replace-command-with-function.md)
 - [수정된 값 반환하기](./catalogs/return-modified-value.md)
-- 오류 코드를 예외로 바꾸기
+- [오류 코드를 예외 코드로 바꾸기](./catalogs/replace-error-code-with-exception.md)
 - [예외를 사전확인으로 바꾸기](./catalogs/replace-exception-handling-with-pre-checking.md)
 
 상속 다루기
