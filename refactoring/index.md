@@ -80,7 +80,7 @@ API 리팩터링
 - [메서드 올리기](./catalogs/pull-up-method.md)
 - [필드 올리기](./catalogs/pull-up-field.md)
 - [생성자 본문 올리기](./catalogs/pull-up-constructor-body.md)
-- 메서드 내리기
+- [메서드 내리기](./catalogs/push-down-method.md)
 - 필드 내리기
 - 타입 코드를 서브클래스로 바꾸기
 - 서브클래스 제거하기
