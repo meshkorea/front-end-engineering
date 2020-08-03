@@ -28,11 +28,11 @@ class Party{
   get annualCost(){...}
 }
 
-class Department{
+class Department extends Party{
   get headCount(){...}
 }
 
-class Employee{
+class Employee extends Party{
   get id(){...}
 }
 ```
