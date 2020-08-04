@@ -29,13 +29,16 @@ monthCharge = new ChargeCalculator(customer, usage, provider).charge;
 ### 😍 To be
 
 ```js
-function charge(customer, usage, prider) {
+function charge(customer, usage, provider) {
   const baseCharge = customer.baseRate * usage;
   return baseCharge + provider.connectionCharge;
 }
 ```
 
 ### 📋 상세
+
+복잡한 연산을 다루는 명령 객체는 큰 연산 하나를 여러 개의 작은 메서드로 쪼개고 필드를 이용해 쪼개진 메서드들끼리 정보를 공유할 수 있다. 또한 어떤 메서드를 호출하냐에 따라 다른 효과를 줄 수 있고 각 단계를 거치며 데이터를 조금씩 완성해갈 수도 있다.
+로직이 크게 복잡하지 않다면 명령 객체는 장점보다 단점이 크니 평범한 함수로 바꿔주는 게 낫다.
 
 ### ⚙️ 절차
 
