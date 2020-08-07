@@ -31,7 +31,7 @@
 기능 이동
 
 - [함수 옮기기](./catalogs/move-function.md)
-- 필드 옮기기
+- [필드 옮기기](./catalogs/move-field.md)
 - [문장을 함수로 옮기기](./catalogs/move-statements-into-function.md)
 - [문장을 호출한 곳으로 옮기기](./catalogs/move-statements-to-callers.md)
 - [인라인 코드를 함수 호출로 바꾸기](./catalogs/replace-inline-code-with-function-call.md)
@@ -43,10 +43,10 @@
 데이터 조직화
 
 - [변수 쪼개기](./catalogs/split-variable.md)
-- 필드 이름 바꾸기
+- [필드 이름 바꾸기](./catalogs/ename-field.md)
 - [파생 변수를 질의 함수로 바꾸기](./catalogs/replace-derived-variable-with-query.md)
 - [참조를 값으로 바꾸기](./catalogs/change-reference-to-value.md)
-- 값을 참조로 바꾸기
+- [값을 참조로 바꾸기](./catalogs/change-value-to-reference.md)
 - [매직 리터럴 바꾸기](./catalogs/replace-magic-literal.md)
 
 조건부 로직 간소화
@@ -87,4 +87,4 @@ API 리팩터링
 - [슈퍼클래스 추출하기](./catalogs/extract-superclass.md)
 - 계층 합치기
 - 서브클래스를 위임으로 바꾸기
-- 슈프클래스를 위임으로 바꾸기
+- 슈퍼클래스를 위임으로 바꾸기
