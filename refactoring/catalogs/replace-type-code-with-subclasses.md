@@ -34,9 +34,9 @@ function createEmployee(name, type) {
 두번째로는 특정 타입에서만 사용되는 필드나 메서드가 있을 경우, 특정한 서브클래스만 해당 필드나 메서드를 갖게 만들어 응집도를 높일 수 있다. 또한 서브클래스를 만들어서 모듈간의 관계를 명확하게 보여줄 수 있다.
 
 ### ⚙️ 절차
-
+직접 상속할 때: 타입 코드를 직접 사용하며, 타입 코드에 따라 동작이 달라진다
 <details>
-<summary>직접 상속할 때: 타입 코드를 직접 사용하며, 타입 코드에 따라 동작이 달라진다</summary>
+<summary>예제</summary>
 
 ```typescript
 class Employee {
