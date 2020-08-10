@@ -87,4 +87,4 @@ API 리팩터링
 - [슈퍼클래스 추출하기](./catalogs/extract-superclass.md)
 - 계층 합치기
 - 서브클래스를 위임으로 바꾸기
-- 슈퍼클래스를 위임으로 바꾸기
+- [슈퍼클래스를 위임으로 바꾸기](./catalogs/replace-superclass-with-delegate.md)
