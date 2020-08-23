@@ -105,7 +105,7 @@ private checkValidation = async () => {
   }];
 };
 
-private handleClickAdd = async () => {
+private handleClickAddUser = async () => {
   const [isValid, form] = await this.checkValidation();
   const { pageStore } = this.props;
 
@@ -145,7 +145,7 @@ private handleClickAdd = async () => {
 
 ### ⚙️ 절차
 1. 폼이 올바른지 확인하는 메서드와, 유저를 등록하는 메서드로 각각 분리한다.
-2. 네이밍 컨벤션에 맞게 handleOnClickAdd 함수의 명칭을 handleClickAdd로 변경한다.
+2. 네이밍 컨벤션과 함수의 의도에 맞게 handleOnClickAdd 함수의 명칭을 handleClickAddUser로 변경한다.
 3. 기능에 문제가 없는지 확인한다.
 
 ### 📝 메모
