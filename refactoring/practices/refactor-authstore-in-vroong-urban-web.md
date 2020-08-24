@@ -5,9 +5,9 @@
 ```tsx
 class AuthStore {
   // 토큰 관리를 위한 필드 & 메서드
-	private tokenTomer: number;
-	public startUpdateTokenTimer() { ... }
-	public loadAccessToken() { ... }
+  private tokenTomer: number;
+  public startUpdateTokenTimer() { ... }
+  public loadAccessToken() { ... }
 
   // 브라우저 storage API를 사용하는 메서드들
   private sessionEventListener() {...}
@@ -16,8 +16,7 @@ class AuthStore {
 
   // UI 단에서 일어나는 action을 처리하기 위한 메서드
   public async redirectToUaaLogin() { ... }
-	public async redirectToUaaLogout() { ... }
- 
+  public async redirectToUaaLogout() { ... }
 }
 ```
 
@@ -29,14 +28,14 @@ class AuthStore {
 class AuthStore {
   // UI 단에서 일어나는 action을 처리하기 위한 메서드
   public async redirectToUaaLogin() { ... }
-	public async redirectToUaaLogout() { ... }
+  public async redirectToUaaLogout() { ... }
 }
 
 class TokenRepository {
   // 토큰 관리를 위한 필드 & 메서드
-	private tokenTomer: number;
-	private startUpdateTokenTimer() { ... }
-	public loadAccessToken() { ... }
+  private tokenTomer: number;
+  private startUpdateTokenTimer() { ... }
+  public loadAccessToken() { ... }
 }
 
 class AuthService {
@@ -48,10 +47,10 @@ class AuthService {
 ```
 
 - `AuthStore`에서 처리하는 기능은 크게 다음으로 나눌 수 있다.
-    - 로그인, 로그아웃 처리
-    - 액세스 토큰 fetch, 갱신, 저장, 폐기
-    - 브라우저 스토리지 API로 탭 간 세션 동기화
-    - 브라우저 스토리지에 사용자 데이터 저장, load 후 검증
+  - 로그인, 로그아웃 처리
+  - 액세스 토큰 fetch, 갱신, 저장, 폐기
+  - 브라우저 스토리지 API로 탭 간 세션 동기화
+  - 브라우저 스토리지에 사용자 데이터 저장, load 후 검증
 - `AuthStore`에서는 너무 많은 역할을 담당하고 있고, 여러가지 관심사가 섞여있다.
 - 관심사가 섞이고 비대해진 클래스는 쉽게 이해하기가 힘들다.
 
@@ -76,4 +75,4 @@ TMS 매니저 웹에서 개선된 설계를 참고한다.
 
 ### 소감
 
- 회사안에서 이렇게 완주하는 스터디를 할 수 있다는 것이 놀랍다. 리팩터링 책을 한번 읽는다고 리팩터링에 대해서 완전히 이해하는 것은 힘들겠지만, 첫걸음을 뗄 수 있는 스터디가 되었다.
+회사안에서 이렇게 완주하는 스터디를 할 수 있다는 것이 놀랍다. 리팩터링 책을 한번 읽는다고 리팩터링에 대해서 완전히 이해하는 것은 힘들겠지만, 첫걸음을 뗄 수 있는 스터디가 되었다.
