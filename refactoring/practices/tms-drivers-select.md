@@ -2,6 +2,8 @@
 
 ## 🗣 설명
 
+![DriverSelectImage](./imgs/DriversSelect.png)
+
 ### 🧐 As is
 
 ```tsx
@@ -11,7 +13,7 @@
       <CountLabel>
         <FormattedMessage {...driversSelectMessages.assignableDriverCount} />
         <StyledStrong>
-          {selectable.length}
+          {assignableDriverOptions.length}
           <FormattedMessage {...driversSelectMessages.unit} />
         </StyledStrong>
       </CountLabel>
@@ -20,7 +22,7 @@
         placeholder={intl.formatMessage(
           driversSelectMessages.searchBoxPlaceholder
         )}
-        onChange={updateSelectableDriverFilter}
+        onChange={updateAssignableDriverFilter}
       />
     </SectionHeader>
     <Table width="400px" height="475px">
@@ -28,16 +30,9 @@
         <Tr>
           <Th textEllipsis>
             <Checkbox
-              disabled={selectableDriverFilter !== ""}
-              onChange={checkAllSelectableHandler}
-              checked={
-                checkedSelectableDrivers.size === selectable.length &&
-                selectable.length !== 0
-              }
-              indeterminate={
-                checkedSelectableDrivers.size !== selectable.length &&
-                checkedSelectableDrivers.size !== 0
-              }
+              disabled={filteredAssignableDriverOptions.length === 0}
+              onChange={handleAllAssignableDriversCheck}
+              checked={isCheckedAllAssignableDrivers}
               optionLabel={intl.formatMessage(driversSelectMessages.name)}
             />
           </Th>
@@ -50,13 +45,13 @@
         </Tr>
       </Thead>
       <Tbody>
-        {filteredSelectable.map((driver) => (
+        {filteredAssignableDriverOptions.map((driver) => (
           <Tr key={driver.key}>
             <Td textEllipsis>
               <DriverCheckbox
-                onChange={checkSelectableDriver}
-                id={driver.key}
-                checked={checkedSelectableDrivers.has(driver.key)}
+                onChange={checkAssignableDriver}
+                driverId={driver.key}
+                checked={checkedAssignableDriverMap.has(driver.key)}
                 optionLabel={driver.value.compactDriverDto.name}
               />
             </Td>
@@ -67,7 +62,7 @@
               <StyledButton
                 width="100px"
                 minWidth="100px"
-                onClick={driverDetailInfoClick}
+                onClick={driverInfoModalOpen}
                 data-id={driver.key}
               >
                 <FormattedMessage
@@ -88,8 +83,8 @@
       marginTop="247px"
       marginBottom="22px"
       onClick={() => {
-        unselectDrivers(checkedSelectedDrivers);
-        clearSelectedDrivers();
+        unassignDrivers(checkedAssignedDriverMap);
+        clearAssignedDrivers();
       }}
     />
     <StyledIcon
@@ -97,17 +92,17 @@
       width="36px"
       height="36px"
       onClick={() => {
-        selectDrivers(checkedSelectableDrivers);
-        clearSelectableDrivers();
+        assignDrivers(checkedAssignableDriverMap);
+        clearAssignableDrivers();
       }}
     />
   </ArrowSection>
-  <SelectedDriverSection>
+  <AssignedDriverSection>
     <SectionHeader>
       <CountLabel>
         <FormattedMessage {...driversSelectMessages.assignedDriverCount} />
         <StyledStrong>
-          {selected.length}
+          {assignedDriverMap.size}
           <FormattedMessage {...driversSelectMessages.unit} />
         </StyledStrong>
       </CountLabel>
@@ -116,7 +111,7 @@
         placeholder={intl.formatMessage(
           driversSelectMessages.searchBoxPlaceholder
         )}
-        onChange={updateSelectedDriverFilter}
+        onChange={updateAssignedDriverFilter}
       />
     </SectionHeader>
     <Table width="400px" height="475px">
@@ -124,16 +119,9 @@
         <Tr>
           <Th textEllipsis>
             <Checkbox
-              onChange={checkAllSelectedHandler}
-              disabled={selectableDriverFilter !== ""}
-              checked={
-                checkedSelectedDrivers.size === selected.length &&
-                selected.length !== 0
-              }
-              indeterminate={
-                checkedSelectedDrivers.size !== selected.length &&
-                checkedSelectedDrivers.size !== 0
-              }
+              onChange={handleAllAssignedDriversCheck}
+              disabled={filteredAssignedDriverOptions.length === 0}
+              checked={isCheckedAllAssignedDrivers}
               optionLabel={intl.formatMessage(driversSelectMessages.name)}
             />
           </Th>
@@ -146,13 +134,43 @@
         </Tr>
       </Thead>
       <Tbody>
-        {filteredSelected.map((driver) => (
+        {inactiveAssignedDriverOptions &&
+          inactiveAssignedDriverOptions.map((driver) => (
+            <Tr key={driver.key}>
+              <Td textEllipsis>
+                <DriverCheckbox
+                  onChange={checkAssignedDriver}
+                  driverId={driver.key}
+                  checked={checkedAssignedDriverMap.has(driver.key)}
+                  optionLabel={driver.value.compactDriverDto.name}
+                />
+              </Td>
+              <Td textAlign="center" textEllipsis>
+                <InactiveDriverLabel>
+                  {driver.value.compactDriverDto?.courierName}
+                </InactiveDriverLabel>
+              </Td>
+              <Td textAlign="center">
+                <StyledButton
+                  width="100px"
+                  minWidth="100px"
+                  onClick={driverInfoModalOpen}
+                  data-id={driver.key}
+                >
+                  <FormattedMessage
+                    {...driversSelectMessages.detailButtonLabel}
+                  />
+                </StyledButton>
+              </Td>
+            </Tr>
+          ))}
+        {filteredAssignedDriverOptions.map((driver) => (
           <Tr key={driver.key}>
             <Td textEllipsis>
               <DriverCheckbox
-                onChange={checkSelectedDriver}
-                id={driver.key}
-                checked={checkedSelectedDrivers.has(driver.key)}
+                onChange={checkAssignedDriver}
+                driverId={driver.key}
+                checked={checkedAssignedDriverMap.has(driver.key)}
                 optionLabel={driver.value.compactDriverDto.name}
               />
             </Td>
@@ -163,7 +181,7 @@
               <StyledButton
                 width="100px"
                 minWidth="100px"
-                onClick={driverDetailInfoClick}
+                onClick={driverInfoModalOpen}
                 data-id={driver.key}
               >
                 <FormattedMessage
@@ -175,7 +193,7 @@
         ))}
       </Tbody>
     </Table>
-  </SelectedDriverSection>
+  </AssignedDriverSection>
   {driverInfoModal.isModalOpen ? (
     <DriverDetailProvider>
       <DriverInfoModal
@@ -190,7 +208,7 @@
 ### 📋 상세
 
 TMS 개발중 급하게 기능 동작을 목표로 작업하다 보니
-기사 선택 ui 내부 코드가 repetitive하고 이해하기 어렵게 되어있다.
+기사 선택 ui 내부 코드가 중복되는 부분이 많고 이해하기 어렵게 되어있다.
 
 ### ✨목표
 
