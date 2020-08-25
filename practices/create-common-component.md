@@ -1,4 +1,4 @@
-# [당일배송 Admin] TransportOrdersAddStore 리팩터링
+# 공통 컴포넌트 생성 하기(관리 내역, 담당자 연락처)
 
 ## **🗣 설명**
 
