@@ -22,7 +22,7 @@
 - [컬렉션 캡슐화하기](./catalogs/encapsulate-collection.md)
 - [기본형을 객체로 바꾸기](./catalogs/replace-primitive-with-object.md)
 - [임시 변수를 질의 함수로 바꾸기](./catalogs/replace-temp-with-query.md)
-- [클래스 추출하기](./catalogs/extract-function.md)
+- [클래스 추출하기](./catalogs/extract-class.md)
 - [클래스 인라인하기](./catalogs/inline-class.md)
 - [위임 숨기기](./catalogs/hide-delegate.md)
 - [중개자 제거하기](./catalogs/remove-intermediary.md)
@@ -87,4 +87,4 @@ API 리팩터링
 - [슈퍼클래스 추출하기](./catalogs/extract-superclass.md)
 - 계층 합치기
 - [서브클래스를 위임으로 바꾸기](./catalogs/replace-subclass-with-delegate.md)
-- 슈퍼클래스를 위임으로 바꾸기
+- [슈퍼클래스를 위임으로 바꾸기](./catalogs/replace-superclass-with-delegate.md)
