@@ -61,7 +61,7 @@
 
 API 리팩터링
 
-- 질의 함수와 변경 함수 분리하기
+- [질의 함수와 변경 함수 분리하기](./catalogs/separate-query-from-modifier.md)
 - [함수 매개변수화하기](./catalogs/parameterize-function.md)
 - [플래그 인수 제거하기](./catalogs/remove-flag-argument.md)
 - [객체 통째로 넘기기](./catalogs/preserve-whole-object.md)
@@ -81,10 +81,10 @@ API 리팩터링
 - [필드 올리기](./catalogs/pull-up-field.md)
 - [생성자 본문 올리기](./catalogs/pull-up-constructor-body.md)
 - [메서드 내리기](./catalogs/push-down-method.md)
-- 필드 내리기
-- 타입 코드를 서브클래스로 바꾸기
+- [필드 내리기](./catalogs/push-down-field.md)
+- [타입 코드를 서브클래스로 바꾸기](./catalogs/replace-type-code-with-subclasses.md)
 - 서브클래스 제거하기
 - [슈퍼클래스 추출하기](./catalogs/extract-superclass.md)
 - 계층 합치기
-- 서브클래스를 위임으로 바꾸기
+- [서브클래스를 위임으로 바꾸기](./catalogs/replace-subclass-with-delegate.md)
 - [슈퍼클래스를 위임으로 바꾸기](./catalogs/replace-superclass-with-delegate.md)
