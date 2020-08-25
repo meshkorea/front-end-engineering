@@ -14,13 +14,15 @@
 
 - [설계 원칙](./design/index.md)
 
-- [데일리 미팅 가이드](./daily-meeting/index.md)
+- [데일리 미팅](./daily-meeting/index.md)
 
 - [커밋 컨벤션](./conventions/commit/index.md)
 
-- [코드 리뷰 가이드](./conventions/code-review/index.md)
+- [코드 리뷰](./conventions/code-review/index.md)
 
-- [테스트 작성 가이드](./tests/index.md)
+- [테스트 작성](./tests/index.md)
+
+- [리팩터링](./refactoring/index.md)
 
 - [OFC(Open Feedback Circle)](./ofc/README.md)
 
