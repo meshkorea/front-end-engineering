@@ -63,7 +63,7 @@ private handleOnClickAdd = async () => {
 };
 ```
 
-### 😍 To be
+### 😍 To be (A)
 
 ```tsx
 private checkValidation = async () => {
@@ -138,6 +138,76 @@ private handleClickAddUser = async () => {
 };
 ```
 
+### 😍 To be (B)
+
+```tsx
+private checkValidation = async () => {
+  const { userIds, userSearchStore } = this.props;
+  const { validate, pageStore } = userSearchStore!;
+  const { searchTerm } = this.state;
+  const uuidRegex = /[0-9a-f]{8}\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\b[0-9a-f]{12}/;
+
+  if (!searchTerm) {
+    pageStore!.openAlert({
+      title: "검색어를 입력해주세요.",
+      isError: true,
+    });
+    return;
+  } else if (!uuidRegex.test(searchTerm)) {
+    pageStore!.openAlert({
+      title: "올바르지 않은 유저 키 형식입니다.",
+      isError: true,
+    });
+    return;
+  } else if (userIds.includes(searchTerm)) {
+    pageStore!.openAlert({
+      title: "이미 등록되어 있는 통합사용자입니다.",
+      isError: true,
+    });
+    return;
+  }
+
+  const user = await validate(searchTerm);
+
+  if (!user) {
+    pageStore!.openAlert({
+      title: "통합 사용자 정보를 찾을 수 없습니다.",
+      message: "유저 키를 다시 확인해주세요.",
+      isError: true,
+    });
+    return;
+  }
+
+  return user;
+};
+
+private handleClickAddUser = async () => {
+  const result = await this.checkValidation();
+  const { pageStore } = this.props;
+  const { searchTerm } = this.state;
+
+  if (result) {
+    pageStore!.openAlert({
+      title: "통합 사용자를 등록하시겠습니까?",
+      message: (
+        <div>
+          <UserEmail>
+            {result.embedded?.emailAccount?.email}
+          </UserEmail>
+          <div>{result.userId}</div>
+        </div>
+      ),
+      onConfirm: () => {
+        this.props.onUserAdd(searchTerm);
+      },
+      onCancel: () => {
+        //
+      }
+    });
+  }
+};
+```
+
 ### 📋 상세
 - UserTable 컴포넌트에서 사용자를 추가할 때 사용하는 메소드이다.
 - handleOnClickAdd 라는 함수에서 폼이 올바른지 확인하고, 사용자를 등록하는 두 가지의 기능을 모두 하고있다.
@@ -149,5 +219,5 @@ private handleClickAddUser = async () => {
 3. 기능에 문제가 없는지 확인한다.
 
 ### 📝 메모
-- checkValidation 함수에서 폼이 올바를시, searchTerm을 같이 반환하는 것이 맞는지 모르겠다.
+- checkValidation 함수에서 폼이 올바를시, searchTerm을 같이 반환하는 것이 맞는지 모르겠다. (A)
 - uuidRegex가 다른 파일에서도 동일하게 사용되고 있는데, 정규식을 관리하는 파일로 분리되어도 괜찮을 것 같다.
