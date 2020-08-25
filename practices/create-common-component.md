@@ -4,7 +4,7 @@
 
 ### **🧐 As is**
 
-```bash
+```html
   <FormHead>관리 내역</FormHead>
   <FormRow>
     <MaxHeightFormColumn columnSize={2}>
@@ -32,13 +32,30 @@
       </FormColumn>
     </IfFullVersion>
   </FormRow>
+
+  ...
+  
+  <FormHead>상점 담당자 정보</FormHead>
+  <FormRow>
+    <FormColumn columnSize={0.75}>
+      <Input
+        {...form.getProps("managerName")}
+        onChange={this.handleOnChange("managerName")}
+        {...editabilityProps}
+      />
+    </FormColumn>
+    <FormColumn columnSize={0.75}>
+      <Input
+        {...form.getProps("managerPhone")}
+        onChange={this.handleOnChange("managerPhone")}
+        placeholder="연락 가능한 번호, 숫자만"
+        {...editabilityProps}
+      />
+    </FormColumn>
+  </FormRow>
 ```
 
 ### **😍 To be**
-
-```bash
-// code..
-```
 
 ### **📋 상세**
 
