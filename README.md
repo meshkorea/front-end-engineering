@@ -22,7 +22,7 @@
 
 - [테스트 작성](./tests/index.md)
 
-- [리팩터링](./refactoring/index.md)
+- [스터디](./study/README.md)
 
 - [OFC(Open Feedback Circle)](./ofc/README.md)
 
