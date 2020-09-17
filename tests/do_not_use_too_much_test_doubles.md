@@ -2,7 +2,7 @@
 
 ### 테스트 대역이란?
 
-테스트 대역이란 실제 구현체를 테스트하기가 곤란할 때 대신 사용하는 대역을 뜻합니다. 마틴 파울러는 [자신의 글](https://martinfowler.com/articles/mocksArentStubs.html)에서 따르면 테스트 대역을 Dummy, Fake, Stub, Mock의 네 가지로 구분한 적이 있습니다.
+테스트 대역이란 실제 구현체를 테스트하기가 곤란할 때 대신 사용하는 대역을 뜻합니다. 마틴 파울러는 [자신의 글](https://martinfowler.com/articles/mocksArentStubs.html)에서 테스트 대역을 Dummy, Fake, Stub, Mock의 네 가지로 구분한 적이 있습니다.
 
 - Dummy: 보통 빈 몸체를 가지며 아무 것도 하지 않음. 컴파일이나 참조 에러를 막는 용도.
 - Fake: Dummy와 다르게 몸체가 있지만 거짓으로 구현. 제품(Production) 레벨에서 쓰일 수는 없는 의사(Pseudo) 구현체.
