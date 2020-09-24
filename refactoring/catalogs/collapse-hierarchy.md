@@ -42,7 +42,7 @@ class WebDeveloper {
 1. 두 클래스 중 제거할 것을 고른다.
     - 미래를 생각해서 더 적합한 이름의 클래스를 남긴다.
     - 둘 다 이상하면 이름을 새로 짓는다.
-2. [필드 올리기](./pull-up-field.md)와 [메서드 올리기](./pull-up-method.md), 혹은 [필드 내리기](./push-down-field.md)와 [메서드 내리기])./push-down-method.md)를 적용해 모든 요소를 하나의 클래스로 옮긴다.
+2. [필드 올리기](./pull-up-field.md)와 [메서드 올리기](./pull-up-method.md), 혹은 [필드 내리기](./push-down-field.md)와 [메서드 내리기](./push-down-method.md)를 적용해 모든 요소를 하나의 클래스로 옮긴다.
 3. 제거할 클래스를 참조하던 모든 코드가 남겨질 클래스를 참조하도록 고친다.
 4. 빈 클래스를 제거한다.
 5. 테스트한다.
