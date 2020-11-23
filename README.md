@@ -22,9 +22,13 @@
 
 - [테스트 작성](./tests/index.md)
 
-- [리팩터링](./refactoring/index.md)
+- [스터디](./study/README.md)
 
-- [회고](./retrospective/index.md)
+- [OFC(Open Feedback Circle)](./ofc/README.md)
+
+- [회고 가이드](./retrospective/index.md)
+
+- [기술부채 관리 전략](./technical-debt/README.md)
 
   
 
