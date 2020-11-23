@@ -1,4 +1,4 @@
-# [권역 편집기] EditableEditorPolygon & DrawingEditorPolygon 리팩터링
+# [메쉬원] EditableEditorPolygon & DrawingEditorPolygon 리팩터링
 
 ## 🗣 설명
 
@@ -36,8 +36,8 @@ class EditableEditorPolygon extends EditorPolygon {
       }),
     );
   };
-  
-  private clearPolylineMap = () => { // Duplicated case 
+
+  private clearPolylineMap = () => { // Duplicated case
     this.polyLineMap.forEach(x => x.unmount());
     this.polyLineMap.clear();
   };
@@ -61,7 +61,7 @@ class DrawingEditorPolygon extends EditorOverlay<
     this.createPolylineMap();
     // ...
   };
-  
+
   private createPolylineMap = () => {
     this.polyLineMap = new Map(
       splitLineString(this.feature).map(lineString => {
@@ -70,7 +70,7 @@ class DrawingEditorPolygon extends EditorOverlay<
       }),
     );
   };
-  
+
   private clearPolylineMap = () => { // Duplicated case
     this.polyLineMap.forEach(x => x.unmount());
     this.polyLineMap.clear();
@@ -97,9 +97,9 @@ class EditableEditorOverlay extends EditorOverlay<
     this.createPolylineMap();
     // ...
   };
-  
+
   protected createPolylineMap = () => {};
-  
+
   private clearPolylineMap = () => {
     this.polyLineMap.forEach(x => x.unmount());
     this.polyLineMap.clear();
