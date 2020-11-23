@@ -1,6 +1,8 @@
-# 리팩터링 실습 준비
+# [당일배송] AuthStore 리팩터링
 
-**🧐 As is**
+## 🗣 설명
+
+### 🧐 As is
 
 ```tsx
 class AuthStore {
@@ -20,9 +22,9 @@ class AuthStore {
 }
 ```
 
-### **😍 To be**
+### 😍 To be
 
-### **📋 상세**
+### 📋 상세
 
 ```tsx
 class AuthStore {
@@ -61,7 +63,7 @@ TMS 매니저 웹에서 개선된 설계를 참고한다.
 - `AuthStore`에서 토큰 관련 데이터, 메서드들은 **`TokenRepository`**로 분리한다.
 - `AuthStore`에서 스토리지 API와 관련된 것들을 **`AuthStorageService`**로 분리한다.
 
-### **⚙️ 절차**
+### ⚙️ 절차
 
 1. 새로운 `TokenRepository`, `AuthStorageService` 클래스를 만든다.
 2. `AuthStore` 에 `TokenRepository`, `AuthStorageService` 인스턴스를 담기 위한 2개 필드를 선언하고, `AuthStore` 생성자에서 필드들을 초기화 해준다.
