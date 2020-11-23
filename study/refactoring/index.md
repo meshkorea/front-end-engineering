@@ -88,3 +88,5 @@ API 리팩터링
 - [계층 합치기](./catalogs/collapse-hierarchy.md)
 - [서브클래스를 위임으로 바꾸기](./catalogs/replace-subclass-with-delegate.md)
 - [슈퍼클래스를 위임으로 바꾸기](./catalogs/replace-superclass-with-delegate.md)
+
+## 리팩터링 적용 사례
