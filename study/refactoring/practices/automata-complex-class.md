@@ -1,6 +1,8 @@
-# Automata 클래스 구조 변경
+# [Automata] 클래스 구조 변경
 
-**🧐 As is**
+## 🗣 설명
+
+### 🧐 As is
 
 ```typescript
 class Automata {
@@ -32,7 +34,7 @@ window.automata = new BaedaltongAutomata();
 window.extractor = new YogiyoExtractor();
 ```
 
-### **😍 To be**
+### 😍 To be
 
 ```typescript
 abstract class Crawler {
@@ -74,7 +76,7 @@ class Runner {
 }
 ```
 
-### **📋 상세**(현재 구조)
+### 📋 상세(현재 구조)
 
 - Baemin과 Baedaltong은 사장님사이트로 접근 후 로그인을 거쳐 정보를 추출한다.
 - 반면 Yogiyo는 상점주의 스마트폰으로 오는 배송 정보(URL)가 포함된 문자를 클릭하여 정보를 추출한다.
@@ -92,11 +94,11 @@ class Runner {
 
 - Sentry로 에러를 전송하거나, 앱으로 결과 Callback을 보내는 별도의 비즈니스 로직은 따로 처리하자.
 
-### **⚙️ 절차**
+### ⚙️ 절차
 
 1. 모든 크롤링을 구현할 수 있도록 돕는 `Crawler` 추상 클래스를 생성한다.
 2. 공통(비즈니스) 로직을 관리하고 크롤링을 실행하는 `Runner` 클래스를 만든다.
-3. 프로덕트 별로 `Crawler`를 구현한다. 새로운 프로덕트별로 이 과정은 반복된다.  
+3. 프로덕트 별로 `Crawler`를 구현한다. 새로운 프로덕트별로 이 과정은 반복된다.
    (1) 기존 메서드와 로직을 적절한 위치의 메서드(`accessPage`, `login`, ...)로 옮긴다. 이 과정에서 사용하지 않는 메서드는 빈 메서드로 남겨놓는다.
 
    (2) 로직을 옮기다가 비즈니스 로직을 발견한 경우, `Runner`로 옮기고 제거한다.
