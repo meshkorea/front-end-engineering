@@ -85,6 +85,14 @@ API 리팩터링
 - [타입 코드를 서브클래스로 바꾸기](./catalogs/replace-type-code-with-subclasses.md)
 - 서브클래스 제거하기
 - [슈퍼클래스 추출하기](./catalogs/extract-superclass.md)
-- 계층 합치기
+- [계층 합치기](./catalogs/collapse-hierarchy.md)
 - [서브클래스를 위임으로 바꾸기](./catalogs/replace-subclass-with-delegate.md)
 - [슈퍼클래스를 위임으로 바꾸기](./catalogs/replace-superclass-with-delegate.md)
+
+## 리팩터링 적용 사례
+
+- [[당일배송 Admin] AuthStore 리팩터링](./practices/refactor-authstore-in-vroong-urban-web.md)
+- [[당일배송 Admin] TransportOrdersAddStore 리팩터링](./practices/urban-transport-orders-add-store.md)
+- [[메쉬원] EditableEditorPolygon & DrawingEditorPolygon 리팩터링](./practices/region-polygon-class.md)
+- [[메쉬원] UserTable.tsx 내의 handleOnClickAdd 함수 리팩토링](./practices/user-table-handle-click-add.md)
+- [[메쉬원] 공통 컴포넌트 생성 하기(관리 내역, 담당자 연락처)](./practices/create-common-component.md)
