@@ -1,4 +1,4 @@
-# [메쉬원] UserTable.tsx 내의 handleOnClickAdd 함수 리팩토링
+# [메쉬원] UserTable.tsx 내의 handleOnClickAdd 함수 리팩터링
 
 ## 🗣 설명
 
@@ -86,7 +86,7 @@ private checkValidation = async () => {
     return [false, {
       title: "이미 등록되어 있는 통합사용자입니다.",
       isError: true,
-    }];	
+    }];
   }
 
   const user = await validate(searchTerm);

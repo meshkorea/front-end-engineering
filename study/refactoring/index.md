@@ -92,4 +92,5 @@ API 리팩터링
 ## 리팩터링 적용 사례
 
 - [[당일배송 Admin] TransportOrdersAddStore 리팩터링](./practices/urban-transport-orders-add-store.md)
+- [[메쉬원] UserTable.tsx 내의 handleOnClickAdd 함수 리팩토링](./practices/user-table-handle-click-add.md)
 - [공통 컴포넌트 생성 하기(관리 내역, 담당자 연락처)](./practices/create-common-component.md)
