@@ -91,6 +91,7 @@ API 리팩터링
 
 ## 리팩터링 적용 사례
 
+- [[Automata] 클래스 구조 변경](./practices/automata-complex-class.md)
 - [[당일배송 Admin] AuthStore 리팩터링](./practices/refactor-authstore-in-vroong-urban-web.md)
 - [[당일배송 Admin] TransportOrdersAddStore 리팩터링](./practices/urban-transport-orders-add-store.md)
 - [[메쉬원] EditableEditorPolygon & DrawingEditorPolygon 리팩터링](./practices/region-polygon-class.md)
