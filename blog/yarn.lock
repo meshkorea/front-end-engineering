@@ -2291,6 +2291,43 @@
     "@types/glob" "*"
     "@types/node" "*"
 
+"@types/styled-system@*":
+  version "5.1.10"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.10.tgz#dcf5690dd837ca49b8de1f23cb99d510c7f4ecb3"
+  integrity sha512-OmVjC9OzyUckAgdavJBc+t5oCJrNXTlzWl9vo2x47leqpX1REq2qJC49SEtzbu1OnWSzcD68Uq3Aj8TeX+Kvtg==
+  dependencies:
+    csstype "^3.0.2"
+
+"@types/styled-system__css@*":
+  version "5.0.14"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.14.tgz#97559d823216d475f716fb5b8dd1766f2d3eeafa"
+  integrity sha512-dvhSQ5upz6TqiQmWLNF0sqdoL5nTomza58vtTSklpE9lDS+5w/ew8PQ+HPSRaXMGrmPGUiL7F0vwryVdxHWfpA==
+  dependencies:
+    csstype "^3.0.2"
+
+"@types/theme-ui@*", "@types/theme-ui@^0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@types/theme-ui/-/theme-ui-0.3.7.tgz#67346df27d02045c7f06f9684c88e3a5622a456d"
+  integrity sha512-4hzDlDhlFYmOdXBLZTbO4N2hWfuGo1N77AcIMaSyDGEyFbdZSpelMLTkEtNzYT8yQWIl3x0WITiBzjqkfc6dUg==
+  dependencies:
+    "@emotion/serialize" "^0.11.15"
+    "@types/react" "*"
+    "@types/styled-system" "*"
+    "@types/styled-system__css" "*"
+    "@types/theme-ui__components" "*"
+    csstype "^3.0.2"
+
+"@types/theme-ui__components@*":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@types/theme-ui__components/-/theme-ui__components-0.2.6.tgz#91ae441bdb201acce8daf088717d96a5d8c1048d"
+  integrity sha512-i/tz/trP4iPcdokOJBSkI/KNR/0YkwLSuJZzEHdrWRtmCKa4MyY+hKcoN9YALq09Z/vYI2JYSEyBz3+N/zNwvg==
+  dependencies:
+    "@emotion/core" "^10.0.0"
+    "@emotion/styled" "^10.0.0"
+    "@types/react" "*"
+    "@types/styled-system" "*"
+    "@types/theme-ui" "*"
+
 "@types/tmp@^0.0.33":
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
