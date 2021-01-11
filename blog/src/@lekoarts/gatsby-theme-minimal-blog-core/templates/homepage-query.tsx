@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import HomepageComponent from "../components/homepage"
+import HomepageComponent from "@lekoarts/gatsby-theme-minimal-blog-core/src/components/homepage"
 
 export default HomepageComponent
 
@@ -10,13 +10,6 @@ export const query = graphql`
         slug
         title
         date(formatString: $formatString)
-        excerpt
-        timeToRead
-        description
-        tags {
-          name
-          slug
-        }
       }
     }
   }
