@@ -22,7 +22,17 @@ module.exports = {
     // siteImage: `/banner.jpg`,
     // Links displayed in the header on the right side
   },
+  mapping: {
+    "MarkdownRemark.frontmatter.author": `AuthorYaml`,
+  },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `author`,
+        path: `${__dirname}/src/author/`,
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
