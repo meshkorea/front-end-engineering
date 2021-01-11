@@ -15,27 +15,17 @@ module.exports = {
     // Used for SEO
     siteDescription: "메쉬코리아 프론트엔드 팀 블로그 입니다.",
     // Can be used for e.g. JSONLD
-    // siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
+    siteHeadline: `Mesh Koera FE Blog`,
     // Will be used to generate absolute URLs for og:image etc.
-    // siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteUrl: `https://mesh.dev/front-end-engineering`,
     // Used for og:image and must be placed inside the `static` folder
-    // siteImage: `/banner.jpg`,
+    siteImage: `/banner.jpg`,
     // Links displayed in the header on the right side
   },
   mapping: {
     "MarkdownRemark.frontmatter.author": `AuthorYaml`,
   },
   plugins: [
-    {
-      resolve: `gatsby-transformer-remark`,
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `author`,
-        path: `${__dirname}/src/author/`,
-      },
-    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
@@ -98,6 +88,23 @@ module.exports = {
         analyzerMode: `static`,
         reportFilename: `_bundle.html`,
         openAnalyzer: false,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        commonmark: true, // CommonMark mode (default: true)
+        footnotes: true, // Footnotes mode (default: true)
+        pedantic: true, // Pedantic mode (default: true)
+        gfm: true, // GitHub Flavored Markdown mode (default: true)
+        plugins: [], // Plugins configs
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "content",
+        path: `${__dirname}/content/`,
       },
     },
   ].filter(Boolean),
