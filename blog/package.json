@@ -25,6 +25,7 @@
     "gatsby-plugin-offline": "^3.3.3",
     "gatsby-plugin-sitemap": "^2.5.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
+    "gatsby-source-filesystem": "^2.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": "^4.1.3"
