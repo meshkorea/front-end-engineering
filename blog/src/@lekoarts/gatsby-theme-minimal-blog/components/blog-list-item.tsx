@@ -2,8 +2,8 @@
 import React from "react";
 import { jsx } from "theme-ui";
 import { Box } from "@theme-ui/components";
-import { graphql, Link } from "gatsby";
-import ItemTags from "@lekoarts/gatsby-theme-minimal-blog/src/components/item-tags";
+import { Link } from "gatsby";
+import ItemAuthor from "./item-author";
 
 type BlogListItemProps = {
   post: {
@@ -24,7 +24,7 @@ type BlogListItemProps = {
 const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
   <Box mb={4}>
     <Link to={post.slug} sx={{ fontSize: [1, 2, 3], color: `text` }}>
-      {post.title}11
+      {post.title}
     </Link>
     <p
       sx={{
@@ -35,12 +35,8 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
       }}
     >
       <time>{post.date}</time>
-      {post.tags && showTags && (
-        <React.Fragment>
-          {` — `}
-          <ItemTags tags={post.tags} />
-        </React.Fragment>
-      )}
+      {" , "}
+      <ItemAuthor author={{id:"1", "name":"정해균"}} />
     </p>
   </Box>
 );
