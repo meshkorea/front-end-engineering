@@ -39,12 +39,12 @@ const Homepage = ({ posts }: PostsProps) => {
       >
         <Hero />
       </section>
-      <Title text="Latest Posts">
+      <Title text="최신 글">
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
-          Read all posts
+          더보기
         </Link>
       </Title>
-      <Listing posts={posts} showTags={false} />
+      <Listing posts={posts}/>
     </Layout>
   );
 };
