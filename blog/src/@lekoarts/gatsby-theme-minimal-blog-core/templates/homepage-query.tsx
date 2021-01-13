@@ -8,6 +8,9 @@ export const query = graphql`
     allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 3) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             author {
               id

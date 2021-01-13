@@ -5,28 +5,17 @@ import { Box } from "@theme-ui/components";
 import { Link } from "gatsby";
 import ItemAuthor from "./item-author";
 import ItemTags from "./item-tags";
+import Post from "../../../types/Post";
 
 type BlogListItemProps = {
-  post: {
-    slug: string;
-    title: string;
-    date: string;
-    excerpt: string;
-    description: string;
-    timeToRead?: number;
-    author: {
-      id: string;
-      name: string
-    },
-    tags?: string[];
-  };
+  post: Post;
   showTags?: boolean;
 };
 
 const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
   <Box mb={4}>
-    <Link to={post.slug} sx={{ fontSize: [1, 2, 3], color: `text` }}>
-      {post.title}
+    <Link to={post.fields.slug} sx={{ fontSize: [1, 2, 3], color: `text` }}>
+      {post.frontmatter.title}
     </Link>
     <p
       sx={{
@@ -36,14 +25,14 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
         fontSize: [1, 1, 2],
       }}
     >
-      <time>{post.date}</time>
+      <time>{post.frontmatter.date}</time>
       {", "}
-      <ItemAuthor author={post.author} />
-      {post.tags && showTags && (
+      <ItemAuthor author={post.frontmatter.author} />
+      {post.frontmatter.tags && showTags && (
         <>
           {", "}
           <React.Fragment>
-            <ItemTags tags={post.tags} />
+            <ItemTags tags={post.frontmatter.tags} />
           </React.Fragment>
         </>
       )}

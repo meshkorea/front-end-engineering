@@ -14,5 +14,5 @@ export default function MinimalBlogCoreHomepage({ ...props }: Props) {
     data: { allMarkdownRemark },
   } = props
 
-  return <Homepage posts={allMarkdownRemark.edges.map(e => e.node.frontmatter)}/>
+  return <Homepage posts={allMarkdownRemark.edges.map(e => e.node)}/>
 }

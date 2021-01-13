@@ -8,24 +8,14 @@ import Title from "@lekoarts/gatsby-theme-minimal-blog/src/components/title";
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout";
 import Listing from "@lekoarts/gatsby-theme-minimal-blog/src/components/listing";
 import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config";
+import Post from "../../../types/Post";
 
-type PostsProps = {
-  posts: {
-    slug: string;
-    title: string;
-    date: string;
-    excerpt: string;
-    description: string;
-    timeToRead?: number;
-    tags?: {
-      name: string;
-      slug: string;
-    }[];
-  }[];
+type HomePageProps = {
+  posts: Post[]
   [key: string]: any;
 };
 
-const Homepage = ({ posts }: PostsProps) => {
+const Homepage = ({ posts }: HomePageProps) => {
   const { basePath, blogPath } = useMinimalBlogConfig();
   return (
     <Layout>
