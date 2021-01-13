@@ -2,19 +2,17 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
   const { createNode, createNodeField } = actions;
   if (node.internal.type === "MarkdownRemark") {
     let {
-      slug,
+      slug: frontmatterSlug,
     } = node.frontmatter;
 
-    const { relativePath } = getNode(node.parent);
-
-    if (!slug) {
-      slug = `/${relativePath.replace(/(\.md|\/index\.md)/, "")}/`;
+    if (!frontmatterSlug) {
+      throw new Error("'slug' is required in frontmatter.")
     }
 
     createNodeField({
       node,
       name: "slug",
-      value: slug,
+      value: frontmatterSlug,
     });
   }
 }
