@@ -27,7 +27,6 @@ type PostsProps = {
 
 const Homepage = ({ posts }: PostsProps) => {
   const { basePath, blogPath } = useMinimalBlogConfig();
-
   return (
     <Layout>
       <section
@@ -44,7 +43,7 @@ const Homepage = ({ posts }: PostsProps) => {
           더보기
         </Link>
       </Title>
-      <Listing posts={posts}/>
+      <Listing posts={posts} showTags={true} />
     </Layout>
   );
 };

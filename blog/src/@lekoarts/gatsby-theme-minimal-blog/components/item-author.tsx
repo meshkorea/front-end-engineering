@@ -12,7 +12,7 @@ type ItemAuthorProps = {
 }
 
 const ItemAuthor = ({ author }: ItemAuthorProps) => (
-  <TLink as={Link} to={author.id}>{author.name}</TLink>
+  <span>{author.name}</span>
 )
 
 export default ItemAuthor;

@@ -4,6 +4,7 @@ import { jsx } from "theme-ui";
 import { Box } from "@theme-ui/components";
 import { Link } from "gatsby";
 import ItemAuthor from "./item-author";
+import ItemTags from "./item-tags";
 
 type BlogListItemProps = {
   post: {
@@ -13,10 +14,11 @@ type BlogListItemProps = {
     excerpt: string;
     description: string;
     timeToRead?: number;
-    tags?: {
-      name: string;
-      slug: string;
-    }[];
+    author: {
+      id: string;
+      name: string
+    },
+    tags?: string[];
   };
   showTags?: boolean;
 };
@@ -35,8 +37,16 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
       }}
     >
       <time>{post.date}</time>
-      {" , "}
-      <ItemAuthor author={{id:"1", "name":"정해균"}} />
+      {", "}
+      <ItemAuthor author={post.author} />
+      {post.tags && showTags && (
+        <>
+          {", "}
+          <React.Fragment>
+            <ItemTags tags={post.tags} />
+          </React.Fragment>
+        </>
+      )}
     </p>
   </Box>
 );
