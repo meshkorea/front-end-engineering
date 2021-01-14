@@ -9,7 +9,7 @@ module.exports = {
     // Used for the title template on pages other than the index site
     siteTitle: "Mesh Korea FE Blog",
     // Default title of the page
-    siteTitleAlt: "Mesh Korea Frontend Team Blog",
+    siteTitleAlt: "Mesh Korea Frontend Blog",
     // Will be set on the <html /> tag
     siteLanguage: "ko",
     // Used for SEO
