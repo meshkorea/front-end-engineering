@@ -5,22 +5,33 @@ export default HomepageComponent
 
 export const query = graphql`
   query($formatString: String!) {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 3) {
+    allPost(sort: { fields: date, order: DESC }, limit: 3) {
+      nodes {
+        id
+        slug
+        title
+        date(formatString: $formatString)
+        excerpt
+        timeToRead
+        tags {
+          name
+          slug
+        }
+      }
       edges {
         node {
-          fields {
-            slug
-          }
-          frontmatter {
-            author {
+          ... on MdxPost {
+            parent {
+              ... on Mdx {
+                id
+                frontmatter {
+                  author
+                }
+              }
               id
-              name
             }
-            tags
-            slug
-            title
-            date(formatString: $formatString)
           }
+          id
         }
       }
     }

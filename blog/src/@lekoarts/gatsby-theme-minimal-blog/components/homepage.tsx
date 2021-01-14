@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui";
 import { Link } from "gatsby";
 // @ts-ignore
+// ignore mdx import ts error
 import Hero from "../texts/hero";
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 import Title from "@lekoarts/gatsby-theme-minimal-blog/src/components/title";

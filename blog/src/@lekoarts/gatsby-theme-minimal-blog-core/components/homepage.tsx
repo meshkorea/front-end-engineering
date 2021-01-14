@@ -1,18 +1,22 @@
 import React from "react"
-import Homepage from "@lekoarts/gatsby-theme-minimal-blog/src/components/homepage";
+import { AllPostNode, AllPostEdge } from "../../../types";
+import getPostsFromQuery from "../../../utils/getPostsFromQuery";
+import Homepage from "../../gatsby-theme-minimal-blog/components/homepage";
 
 type Props = {
   data: {
-    allMarkdownRemark: any
-    [key: string]: string
+    allPost: {
+      nodes: AllPostNode[];
+      edges: AllPostEdge[];
+    };
   }
-  [key: string]: any
 }
 
 export default function MinimalBlogCoreHomepage({ ...props }: Props) {
   const {
-    data: { allMarkdownRemark },
+    data: { allPost },
   } = props
 
-  return <Homepage posts={allMarkdownRemark.edges.map(e => e.node)}/>
+  const posts = getPostsFromQuery(allPost);
+  return <Homepage posts={posts} {...props} />
 }
