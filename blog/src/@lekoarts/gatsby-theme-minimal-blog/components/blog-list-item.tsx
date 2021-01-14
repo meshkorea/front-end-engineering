@@ -27,7 +27,7 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
     >
       <time>{post.date}</time>
       {", "}
-      <ItemAuthor author={post.author} />
+      <span>{post.author}</span>
       {post.tags && showTags && (
         <>
           {", "}

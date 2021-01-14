@@ -32,12 +32,10 @@ const Post = ({ post }: PostProps) => (
       {post.author && <span>{post.author}</span>}
       {post.tags && (
         <React.Fragment>
-          {`, `}
+          {` — `}
           <ItemTags tags={post.tags} />
         </React.Fragment>
       )}
-      {post.timeToRead && ` — `}
-      {post.timeToRead && <span>{post.timeToRead} min read</span>}
     </p>
     <section
       sx={{

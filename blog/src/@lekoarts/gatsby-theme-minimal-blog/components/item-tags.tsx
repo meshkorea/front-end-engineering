@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui";
 import React from "react"
 import { Tag } from "../../../types";
 
@@ -13,7 +15,9 @@ const ItemTags = ({ tags }: TagsProps) => {
       {tags.map((tag, i) => (
         <React.Fragment key={tag.slug}>
           {!!i && tagDelimiter}
-          <span>
+          <span sx={{
+            opacity: "0.7",
+          }}>
             {`${tagPrefix}${tag.name}`}
           </span>
         </React.Fragment>
