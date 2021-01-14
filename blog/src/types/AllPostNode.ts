@@ -1,7 +1,6 @@
-import Tag from "./Tag";
+import Tag from "./Tag"
 
-type Post = {
-  author: string;
+type AllPostNode = {
   id: string;
   slug: string;
   title: string;
@@ -12,4 +11,4 @@ type Post = {
   tags: Tag[];
 }
 
-export default Post;
+export default AllPostNode
