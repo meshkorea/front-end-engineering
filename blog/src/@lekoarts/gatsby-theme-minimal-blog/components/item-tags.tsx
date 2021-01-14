@@ -1,7 +1,8 @@
 import React from "react"
+import { Tag } from "../../../types";
 
 type TagsProps = {
-  tags: string[];
+  tags: Tag[]
 }
 
 const ItemTags = ({ tags }: TagsProps) => {
@@ -10,10 +11,10 @@ const ItemTags = ({ tags }: TagsProps) => {
   return (
     <React.Fragment>
       {tags.map((tag, i) => (
-        <React.Fragment key={tag}>
+        <React.Fragment key={tag.slug}>
           {!!i && tagDelimiter}
           <span>
-            {`${tagPrefix}${tag}`}
+            {`${tagPrefix}${tag.name}`}
           </span>
         </React.Fragment>
       ))}

@@ -14,8 +14,8 @@ type BlogListItemProps = {
 
 const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
   <Box mb={4}>
-    <Link to={post.fields.slug} sx={{ fontSize: [1, 2, 3], color: `text` }}>
-      {post.frontmatter.title}
+    <Link to={post.slug} sx={{ fontSize: [1, 2, 3], color: `text` }}>
+      {post.title}
     </Link>
     <p
       sx={{
@@ -25,14 +25,14 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
         fontSize: [1, 1, 2],
       }}
     >
-      <time>{post.frontmatter.date}</time>
+      <time>{post.date}</time>
       {", "}
-      <ItemAuthor author={post.frontmatter.author} />
-      {post.frontmatter.tags && showTags && (
+      <ItemAuthor author={post.author} />
+      {post.tags && showTags && (
         <>
           {", "}
           <React.Fragment>
-            <ItemTags tags={post.frontmatter.tags} />
+            <ItemTags tags={post.tags} />
           </React.Fragment>
         </>
       )}
