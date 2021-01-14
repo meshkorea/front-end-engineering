@@ -1,4 +1,5 @@
 import React from "react"
+
 import { PostResult } from "../../../types"
 import getPostFromQuery from "../../../utils/getPostFromQuery"
 import Post from "../../gatsby-theme-minimal-blog/components/post"

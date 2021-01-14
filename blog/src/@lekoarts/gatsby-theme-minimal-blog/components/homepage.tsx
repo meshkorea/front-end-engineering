@@ -1,14 +1,15 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Link } from "gatsby";
-// @ts-ignore
-// ignore mdx import ts error
-import Hero from "../texts/hero";
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 import Title from "@lekoarts/gatsby-theme-minimal-blog/src/components/title";
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout";
 import Listing from "@lekoarts/gatsby-theme-minimal-blog/src/components/listing";
 import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config";
+
+// @ts-ignore
+// ignore mdx import ts error
+import Hero from "../texts/hero";
 import { Post } from "../../../types";
 
 type HomePageProps = {

@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+
 import { Post } from "../../../types"
 import BlogListItem from "./blog-list-item"
 

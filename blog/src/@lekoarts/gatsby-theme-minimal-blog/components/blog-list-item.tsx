@@ -3,7 +3,7 @@ import React from "react";
 import { jsx } from "theme-ui";
 import { Box } from "@theme-ui/components";
 import { Link } from "gatsby";
-import ItemAuthor from "./item-author";
+
 import ItemTags from "./item-tags";
 import Post from "../../../types/Post";
 

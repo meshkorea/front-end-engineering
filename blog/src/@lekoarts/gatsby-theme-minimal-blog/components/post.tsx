@@ -2,9 +2,10 @@
 import { jsx, Heading } from "theme-ui"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import React from "react"
-import ItemTags from "./item-tags"
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout"
 import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo"
+
+import ItemTags from "./item-tags"
 import { Post as PostData } from "../../../types"
 
 type PostProps = {

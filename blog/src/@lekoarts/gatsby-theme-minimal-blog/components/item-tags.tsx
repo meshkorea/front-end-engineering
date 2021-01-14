@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import React from "react"
+
 import { Tag } from "../../../types";
 
 type TagsProps = {
