@@ -1,7 +1,7 @@
 ---
 title: 2020년 자바스크립트 동향
 date: 2019-11-01
-author: 정해균
+author: 정메쉬
 slug: "/fantastic-beasts-and-where-to-find-them"
 tags:
   - 리팩터링

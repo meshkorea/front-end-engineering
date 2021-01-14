@@ -2,7 +2,7 @@
 title: 리팩터링 2판 스터디 후기
 date: 2019-10-25
 slug: "/curses-counter-curses-and-more"
-author: 정해균
+author: 김부릉
 canonicalUrl: "https://random-blog-about-curses.com"
 ---
 

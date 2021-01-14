@@ -1,8 +1,8 @@
 ---
 title: 첫 번째 글
 date: 2019-09-01
-author: 정해균
-
+author: 라이더
+slug: "/harry-potter-and-the-half-blood-prince"
 tags:
   - Novel
   - Highlight
