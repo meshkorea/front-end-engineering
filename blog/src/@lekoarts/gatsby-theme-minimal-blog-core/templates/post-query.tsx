@@ -25,6 +25,17 @@ export const query = graphql`
           }
         }
       }
+      ... on MdxPost {
+        id
+        parent {
+          ... on Mdx {
+            id
+            frontmatter {
+              author
+            }
+          }
+        }
+      }
     }
   }
 `

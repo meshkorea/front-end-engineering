@@ -1,7 +1,6 @@
 import Tag from "./Tag";
 
-type Post = {
-  author: string;
+type PostResult = {
   id: string;
   slug: string;
   title: string;
@@ -10,16 +9,16 @@ type Post = {
   description: string;
   timeToRead: number;
   tags: Tag[];
-  body?: string;
-  canonicalUrl?: string;
-  banner?: {
+  body: string;
+  canonicalUrl: string;
+  banner: {
     childImageSharp: {
       resize: {
         src: string;
       }
     }
   }
-  parent?: {
+  parent: {
     id: string;
     frontmatter: {
       author: string;
@@ -27,4 +26,4 @@ type Post = {
   }
 }
 
-export default Post;
+export default PostResult;

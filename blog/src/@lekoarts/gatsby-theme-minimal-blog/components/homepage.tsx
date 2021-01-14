@@ -9,7 +9,7 @@ import Title from "@lekoarts/gatsby-theme-minimal-blog/src/components/title";
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout";
 import Listing from "@lekoarts/gatsby-theme-minimal-blog/src/components/listing";
 import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config";
-import Post from "../../../types/Post";
+import { Post } from "../../../types";
 
 type HomePageProps = {
   posts: Post[]
