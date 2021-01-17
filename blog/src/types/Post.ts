@@ -1,6 +1,6 @@
 import Tag from "./Tag";
 
-type Post = {
+interface Post {
   author: string;
   id: string;
   slug: string;
@@ -10,7 +10,10 @@ type Post = {
   description: string;
   timeToRead: number;
   tags: Tag[];
-  body?: string;
+}
+
+export interface PostDetail extends Post {
+  body: string;
   canonicalUrl?: string;
   banner?: {
     childImageSharp: {
@@ -25,6 +28,8 @@ type Post = {
       author: string;
     };
   };
-};
+}
+
+export interface PostListItem extends Post { }
 
 export default Post;

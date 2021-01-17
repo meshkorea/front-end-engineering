@@ -7,10 +7,10 @@ import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo";
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 
 import Listing from "./listing";
-import { Post } from "types";
+import { PostListItem } from "types";
 
 type TagProps = {
-  posts: Post[];
+  posts: PostListItem[];
   pageContext: {
     isCreatedByStatefulCreatePages: boolean;
     slug: string;

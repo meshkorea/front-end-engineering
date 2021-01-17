@@ -8,10 +8,10 @@ import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout";
 import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo";
 
 import Listing from "./listing";
-import { Post } from "types";
+import { PostListItem } from "types";
 
 type PostsProps = {
-  posts: Post[];
+  posts: PostListItem[];
   [key: string]: any;
 };
 

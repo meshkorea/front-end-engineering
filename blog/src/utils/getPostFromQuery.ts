@@ -1,6 +1,6 @@
-import { Post, PostResult } from "types";
+import { PostDetail, PostResult } from "types";
 
-const getPostFromQuery = (result: PostResult): Post => ({
+const getPostFromQuery = (result: PostResult): PostDetail => ({
   ...result,
   author: result.parent.frontmatter.author,
 });

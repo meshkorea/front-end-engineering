@@ -6,10 +6,10 @@ import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout";
 import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo";
 
 import ItemTags from "./item-tags";
-import { Post as PostData } from "types";
+import { PostDetail } from "types";
 
 type PostProps = {
-  post: PostData;
+  post: PostDetail;
 };
 
 const px = [`32px`, `16px`, `8px`, `4px`];

@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
+import { PostListItem } from "types";
 
-import { Post } from "types";
 import BlogListItem from "./blog-list-item";
 
 type ListingProps = {
-  posts: Post[];
+  posts: PostListItem[];
   className?: string;
   showTags?: boolean;
 };
