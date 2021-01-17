@@ -19,9 +19,6 @@ module.exports = {
     siteHeadline: `Mesh Koera FE Blog`,
     // Will be used to generate absolute URLs for og:image etc.
     siteUrl: `https://mesh.dev/front-end-engineering`,
-    // Used for og:image and must be placed inside the `static` folder
-    siteImage: `/banner.jpg`,
-    // Links displayed in the header on the right side
   },
   mapping: {
     "MarkdownRemark.frontmatter.author": `AuthorYaml`,
@@ -60,12 +57,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Mesh Korea Web Frontend Blog`,
+        short_name: `mesh-fe-blog`,
+        description: `This site is Mesh Korea's Web Front-end blog. All articles are published by our team member.`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#6B46C1`,
+        theme_color: `#1b3993`,
         display: `standalone`,
         icons: [
           {
