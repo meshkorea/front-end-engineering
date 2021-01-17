@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config";
 
-import { Tag } from "../../../types";
+import { Tag } from "types";
 
 type TagsProps = {
   tags: Tag[];

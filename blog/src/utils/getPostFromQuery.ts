@@ -1,4 +1,4 @@
-import { Post, PostResult } from "../types";
+import { Post, PostResult } from "types";
 
 const getPostFromQuery = (result: PostResult): Post => ({
   ...result,

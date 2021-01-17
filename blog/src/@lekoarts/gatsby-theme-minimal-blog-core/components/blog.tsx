@@ -1,8 +1,8 @@
 import React from "react";
 import Blog from "@lekoarts/gatsby-theme-minimal-blog/src/components/blog";
 
-import getPostsFromQuery from "../../../utils/getPostsFromQuery";
-import { AllPostResult } from "../../../types";
+import { getPostsFromQuery } from "utils";
+import { AllPostResult } from "types";
 
 type Props = {
   data: {

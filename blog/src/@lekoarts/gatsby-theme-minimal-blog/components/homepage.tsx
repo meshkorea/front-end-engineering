@@ -10,7 +10,7 @@ import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/
 // @ts-ignore
 // ignore mdx import ts error
 import Hero from "../texts/hero";
-import { Post } from "../../../types";
+import { Post } from "types";
 
 type HomePageProps = {
   posts: Post[];

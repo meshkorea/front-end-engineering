@@ -6,7 +6,7 @@ import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout";
 import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo";
 
 import ItemTags from "./item-tags";
-import { Post as PostData } from "../../../types";
+import { Post as PostData } from "types";
 
 type PostProps = {
   post: PostData;

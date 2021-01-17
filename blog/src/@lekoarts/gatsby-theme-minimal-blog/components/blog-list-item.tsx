@@ -4,7 +4,7 @@ import { jsx, Box } from "theme-ui";
 import { Link } from "gatsby";
 
 import ItemTags from "./item-tags";
-import Post from "../../../types/Post";
+import Post from "types/Post";
 
 type BlogListItemProps = {
   post: Post;

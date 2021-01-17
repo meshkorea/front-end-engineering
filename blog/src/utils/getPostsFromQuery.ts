@@ -1,4 +1,4 @@
-import { AllPostEdge, AllPostNode } from "../types";
+import { AllPostEdge, AllPostNode } from "types";
 
 type QueryResult = {
   nodes: AllPostNode[];

@@ -7,7 +7,7 @@ import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo";
 import replaceSlashes from "@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes";
 
 import Listing from "./listing";
-import { Post } from "../../../types";
+import { Post } from "types";
 
 type TagProps = {
   posts: Post[];
