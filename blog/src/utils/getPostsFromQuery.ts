@@ -13,7 +13,7 @@ const getPostsFromQuery = ({ nodes, edges }: QueryResult) =>
     })?.node;
     return {
       ...node,
-      author: mdxPost.parent.frontmatter.author,
+      author: mdxPost?.parent.frontmatter.author,
     };
   });
 
