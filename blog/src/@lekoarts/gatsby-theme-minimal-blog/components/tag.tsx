@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, Heading } from "theme-ui";
-import { Flex } from "@theme-ui/components";
+import { jsx, Heading, Flex } from "theme-ui";
 import { Link } from "gatsby";
 import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config";
 import Layout from "@lekoarts/gatsby-theme-minimal-blog/src/components/layout";
