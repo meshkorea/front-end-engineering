@@ -1,8 +1,8 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   pathPrefix: "/front-end-engineering",
@@ -98,7 +98,7 @@ module.exports = {
         footnotes: true, // Footnotes mode (default: true)
         pedantic: true, // Pedantic mode (default: true)
         gfm: true, // GitHub Flavored Markdown mode (default: true)
-        plugins: ['gatsby-transformer-yaml'], // Plugins configs
+        plugins: ["gatsby-transformer-yaml"], // Plugins configs
       },
     },
     {
@@ -109,4 +109,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
