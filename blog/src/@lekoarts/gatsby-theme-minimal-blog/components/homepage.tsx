@@ -13,7 +13,7 @@ import Hero from "../texts/hero";
 import { Post } from "../../../types";
 
 type HomePageProps = {
-  posts: Post[]
+  posts: Post[];
   [key: string]: any;
 };
 
@@ -31,9 +31,7 @@ const Homepage = ({ posts }: HomePageProps) => {
         <Hero />
       </section>
       <Title text="최신 글">
-        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>
-          더보기
-        </Link>
+        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>더보기</Link>
       </Title>
       <Listing posts={posts} showTags={true} />
     </Layout>

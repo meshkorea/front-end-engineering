@@ -1,7 +1,7 @@
-import { graphql } from "gatsby"
-import HomepageComponent from "@lekoarts/gatsby-theme-minimal-blog-core/src/components/homepage"
+import { graphql } from "gatsby";
+import HomepageComponent from "@lekoarts/gatsby-theme-minimal-blog-core/src/components/homepage";
 
-export default HomepageComponent
+export default HomepageComponent;
 
 export const query = graphql`
   query($formatString: String!) {
@@ -36,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -15,15 +15,15 @@ type PostResult = {
     childImageSharp: {
       resize: {
         src: string;
-      }
-    }
-  }
+      };
+    };
+  };
   parent: {
     id: string;
     frontmatter: {
       author: string;
-    }
-  }
-}
+    };
+  };
+};
 
 export default PostResult;

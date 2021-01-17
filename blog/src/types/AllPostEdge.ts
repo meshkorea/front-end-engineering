@@ -5,9 +5,9 @@ type AllPostEdge = {
       id: string;
       frontmatter: {
         author: string;
-      }
-    }
-  }
-}
+      };
+    };
+  };
+};
 
 export default AllPostEdge;

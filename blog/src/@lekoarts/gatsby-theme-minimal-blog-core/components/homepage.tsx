@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import { AllPostNode, AllPostEdge } from "../../../types";
 import getPostsFromQuery from "../../../utils/getPostsFromQuery";
@@ -10,14 +10,14 @@ type Props = {
       nodes: AllPostNode[];
       edges: AllPostEdge[];
     };
-  }
-}
+  };
+};
 
 export default function MinimalBlogCoreHomepage({ ...props }: Props) {
   const {
     data: { allPost },
-  } = props
+  } = props;
 
   const posts = getPostsFromQuery(allPost);
-  return <Homepage posts={posts} {...props} />
+  return <Homepage posts={posts} {...props} />;
 }

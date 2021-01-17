@@ -1,7 +1,7 @@
-import { graphql } from "gatsby"
-import TagsComponent from "@lekoarts/gatsby-theme-minimal-blog-core/src/components/tags"
+import { graphql } from "gatsby";
+import TagsComponent from "@lekoarts/gatsby-theme-minimal-blog-core/src/components/tags";
 
-export default TagsComponent
+export default TagsComponent;
 
 export const query = graphql`
   query {
@@ -12,4 +12,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

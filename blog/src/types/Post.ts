@@ -16,15 +16,15 @@ type Post = {
     childImageSharp: {
       resize: {
         src: string;
-      }
-    }
-  }
+      };
+    };
+  };
   parent?: {
     id: string;
     frontmatter: {
       author: string;
-    }
-  }
-}
+    };
+  };
+};
 
 export default Post;

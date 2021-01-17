@@ -1,4 +1,4 @@
-import Tag from "./Tag"
+import Tag from "./Tag";
 
 type AllPostNode = {
   id: string;
@@ -9,6 +9,6 @@ type AllPostNode = {
   description: string;
   timeToRead: number;
   tags: Tag[];
-}
+};
 
-export default AllPostNode
+export default AllPostNode;

@@ -29,12 +29,12 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
       {", "}
       <span>{post.author}</span>
       {post.tags && showTags && (
-        <>
+        <React.Fragment>
           {", "}
           <React.Fragment>
             <ItemTags tags={post.tags} />
           </React.Fragment>
-        </>
+        </React.Fragment>
       )}
     </p>
   </Box>
