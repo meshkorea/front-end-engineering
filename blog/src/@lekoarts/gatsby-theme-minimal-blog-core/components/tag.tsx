@@ -1,7 +1,7 @@
 import React from "react";
 import Tag from "@lekoarts/gatsby-theme-minimal-blog/src/components/tag";
 
-import getPostsFromQuery from "utils/getPostsFromQuery";
+import { getPostsFromQuery } from "utils";
 import { AllPostResult } from "types";
 
 type Props = {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { PostResult } from "types";
-import getPostFromQuery from "utils/getPostFromQuery";
+import { getPostFromQuery } from "utils";
 import Post from "../../gatsby-theme-minimal-blog/components/post";
 
 type Props = {
