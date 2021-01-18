@@ -1,3 +1,3 @@
 User-agent: *
 
-sitemap: https://minimal-blog.lekoarts.de/sitemap.xml
+sitemap: https://mesh.dev/front-end-engineering/sitemap.xml
