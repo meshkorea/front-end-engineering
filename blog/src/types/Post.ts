@@ -15,13 +15,6 @@ interface Post {
 export interface PostDetail extends Post {
   body: string;
   canonicalUrl?: string;
-  banner?: {
-    childImageSharp: {
-      resize: {
-        src: string;
-      };
-    };
-  };
   parent?: {
     id: string;
     frontmatter: {

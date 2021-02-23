@@ -18,13 +18,6 @@ export const query = graphql`
       body
       excerpt
       timeToRead
-      banner {
-        childImageSharp {
-          resize(width: 1200, quality: 90) {
-            src
-          }
-        }
-      }
       ... on MdxPost {
         id
         parent {

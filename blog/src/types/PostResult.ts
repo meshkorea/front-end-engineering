@@ -11,13 +11,6 @@ type PostResult = {
   tags: Tag[];
   body: string;
   canonicalUrl: string;
-  banner: {
-    childImageSharp: {
-      resize: {
-        src: string;
-      };
-    };
-  };
   parent: {
     id: string;
     frontmatter: {

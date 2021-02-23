@@ -20,7 +20,6 @@ const Post = ({ post }: PostProps) => (
     <SEO
       title={post.title}
       description={post.description ?? post.excerpt}
-      image={post.banner?.childImageSharp.resize.src ?? undefined}
       pathname={post.slug}
       canonicalUrl={post.canonicalUrl}
     />
