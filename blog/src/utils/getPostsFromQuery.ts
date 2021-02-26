@@ -6,9 +6,9 @@ type QueryResult = {
 };
 
 const getPostsFromQuery = ({ nodes, edges }: QueryResult) =>
-  nodes.map((node) => {
+  nodes.map(node => {
     const postId = node.id;
-    const mdxPost = edges.find((edge) => {
+    const mdxPost = edges.find(edge => {
       return edge.node.id === postId;
     })?.node;
     return {
