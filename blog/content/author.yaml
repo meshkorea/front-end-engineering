@@ -1,0 +1,61 @@
+# --------------------------------------------------------------------
+# author.yaml 작성법. 🤗
+# --------------------------------------------------------------------
+# 다음은 필수로 입력해야 합니다.
+# - id: 식별자로 사용되니 영문으로 입력 부탁드립니다.
+# - name: 이름을 입력해주세요! 닉네임도 좋습니다.
+# - avatar: 프로필 이미지 경로를 작성해주세요. ex. avatars/gildong.hong.png
+# - bio: 간단한 자기 소개를 해주세요!
+# 다음은 선택 필드 입니다.
+# - github: 자랑하고 싶은 깃헙 프로필 주소를 작성해주세요!
+# --------------------------------------------------------------------
+- id: taegon.choi
+  name: 최태건
+  avatar:
+  github:
+  bio:
+- id: yongbeen.im
+  name: 임용빈
+  avatar:
+  github:
+  bio:
+- id: songwon.park
+  name: 박송원
+  avatar:
+  github:
+  bio:
+- id: hyeseon.yeom
+  name: 염혜선
+  avatar:
+  github:
+  bio:
+- id: junwon.choi
+  name: 최준원
+  avatar:
+  github:
+  bio:
+- id: minseok.suh
+  name: 서민석
+  avatar:
+  github:
+  bio:
+- id: joonmo.kim
+  name: 김준모
+  avatar:
+  github:
+  bio:
+- id: haegyun.jung
+  name: 정해균
+  avatar: avatars/haegyun.jung.png
+  github: https://github.com/haeguri
+  bio: 메쉬코리아의 4륜 서비스 프론트엔드 개발을 담당하고 있습니다.
+- id: yunjae.jung
+  name: 정윤재
+  avatar:
+  github:
+  bio:
+- id: yonghyun.kang
+  name: 강용현
+  avatar:
+  github:
+  bio:
