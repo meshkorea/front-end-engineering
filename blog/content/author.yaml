@@ -46,9 +46,9 @@
   bio:
 - id: haegyun.jung
   name: 정해균
-  avatar:
-  github:
-  bio:
+  avatar: avatars/haegyun.jung.png
+  github: https://github.com/haeguri
+  bio: 메쉬코리아의 4륜 서비스 프론트엔드 개발을 담당하고 있습니다.
 - id: yunjae.jung
   name: 정윤재
   avatar:
