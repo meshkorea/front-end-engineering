@@ -21,9 +21,11 @@ module.exports = {
     siteUrl: `https://mesh.dev/front-end-engineering`,
   },
   mapping: {
-    "MarkdownRemark.frontmatter.author": `AuthorYaml`,
+    "Mdx.frontmatter.author": `AuthorYaml`,
   },
   plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
@@ -89,20 +91,21 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        commonmark: true, // CommonMark mode (default: true)
-        footnotes: true, // Footnotes mode (default: true)
-        pedantic: true, // Pedantic mode (default: true)
-        gfm: true, // GitHub Flavored Markdown mode (default: true)
-        plugins: ["gatsby-transformer-yaml"], // Plugins configs
+        path: `${__dirname}/content`,
+        name: "content",
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        name: "content",
-        path: `${__dirname}/content/`,
+        extensions: [`.md`],
+        gatsbyRemarkPlugins: [
+          "gatsby-remark-copy-linked-files",
+          `gatsby-remark-images`,
+        ],
+        plugins: ["gatsby-transformer-yaml"],
       },
     },
   ].filter(Boolean),
