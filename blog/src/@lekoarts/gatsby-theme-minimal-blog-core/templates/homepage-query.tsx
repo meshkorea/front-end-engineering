@@ -25,7 +25,14 @@ export const query = graphql`
               ... on Mdx {
                 id
                 frontmatter {
-                  author
+                  author {
+                    id
+                    name
+                    bio 
+                    avatar {
+                      publicURL
+                    }
+                  }
                 }
               }
               id

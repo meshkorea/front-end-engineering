@@ -1,7 +1,8 @@
 import Tag from "./Tag";
+import Author from "./Author";
 
 interface Post {
-  author: string;
+  author: Author;
   id: string;
   slug: string;
   title: string;
@@ -18,7 +19,7 @@ export interface PostDetail extends Post {
   parent?: {
     id: string;
     frontmatter: {
-      author: string;
+      author: Author;
     };
   };
 }

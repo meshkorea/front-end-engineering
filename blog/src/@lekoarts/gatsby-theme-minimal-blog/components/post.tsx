@@ -7,6 +7,7 @@ import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo";
 
 import ItemTags from "./item-tags";
 import { PostDetail } from "types";
+import Author from "components/Author";
 
 type PostProps = {
   post: PostDetail;
@@ -35,8 +36,6 @@ const Post = ({ post }: PostProps) => (
       }}
     >
       <time>{post.date}</time>
-      {post.author && ` — `}
-      {post.author && <span>{post.author}</span>}
       {post.tags && (
         <React.Fragment>
           {` — `}
@@ -56,6 +55,7 @@ const Post = ({ post }: PostProps) => (
     >
       <MDXRenderer>{post.body}</MDXRenderer>
     </section>
+    <Author author={post.author} />
   </Layout>
 );
 
