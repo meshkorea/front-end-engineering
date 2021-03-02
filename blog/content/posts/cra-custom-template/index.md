@@ -16,7 +16,7 @@ CRA (Create React App) Template 생성 및 배포후 다운받기.
 
 ## Ceate React App 이란 ?
 
-Create React App은 React 앱을 빌드하고 개발 환경을 구축할 때 엄청나게 유리한 고점을 시작으로 제공되는 도구이다.
+Create React App은 React 앱을 빌드하고 개발 환경을 구축 시 엄청나게 유리한 고점을 시작으로 제공되는 도구이다.
 
 시간이 많이 걸리는 React의 수많은 보일러플레이트 및 웹팩 설정 등을 절약 할 수 있다.
 
