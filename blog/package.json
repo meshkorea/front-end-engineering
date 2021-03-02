@@ -14,7 +14,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "rimraf public && gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^2.7.3",
@@ -35,6 +35,7 @@
     "gatsby-transformer-yaml": "^2.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rimraf": "3.0.2",
     "typescript": "^4.1.3"
   },
   "devDependencies": {
