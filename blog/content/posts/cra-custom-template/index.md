@@ -16,7 +16,7 @@ CRA (Create React App) Template 생성 및 배포후 다운받기.
 
 ## Ceate React App 이란 ?
 
-Create React App은 React 앱을 빌드하고 개발 환경을 구축할때 엄청나게 유리한 고점을 시작으로 제공되는 도구이다.
+Create React App은 React 앱을 빌드하고 개발 환경을 구축할 때 엄청나게 유리한 고점을 시작으로 제공되는 도구이다.
 
 시간이 많이 걸리는 React의 수많은 보일러플레이트 및 웹팩 설정 등을 절약 할 수 있다.
 
@@ -262,7 +262,7 @@ yarn create react-app %PROJECT_NAME% --template backoffice
 
 위 사이트에서 내가 배포한 패키지 이름을 쓰면 그에 맞는 버전 뱃지 URL을 준다.
 
-README 파일에 버전 이미지를 붙여놓으면 시멘틱 버저닝을 하고 있는 프로젝트에서 package.json 의 버전 수정을 할때 마다 README에 변경된 버전의 뱃지가 붙어진걸 확인할 수 있다.
+README 파일에 버전 이미지를 붙여놓으면 시멘틱 버저닝을 하고 있는 프로젝트에서 package.json 의 버전 수정 시 README에 변경된 버전의 뱃지가 붙어진걸 확인할 수 있다.
 
 아니면 아래 사이트에서 커스텀 static 한 뱃지를 붙여놓을 수 있다.
 
