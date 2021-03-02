@@ -22,13 +22,13 @@ export const query = graphql`
         node {
           ... on MdxPost {
             parent {
-              ... on MarkdownRemark {
+              ... on Mdx {
                 id
                 frontmatter {
                   author {
                     id
                     name
-                    bio 
+                    bio
                     avatar {
                       publicURL
                     }

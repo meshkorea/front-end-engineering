@@ -16,13 +16,12 @@ CRA (Create React App) Template 생성 및 배포후 다운받기.
 
 ## Ceate React App 이란 ?
 
-Create React App은 React 앱을 빌드하고 개발 환경을 구축할때 엄청나게 유리한 고점을 시작으로 제공되는 도구(**Tool**)이다.
+Create React App은 React 앱을 빌드하고 개발 환경을 구축할때 엄청나게 유리한 고점을 시작으로 제공되는 도구이다.
 
 시간이 많이 걸리는 React의 수많은 보일러플레이트 및 웹팩 설정 등을 절약 할 수 있다.
 
-CLI를 통해 하나의 명령문만 실행하면 Create React App이 환경 구성을 갖춰서 React 프로젝트를 생성해준다..Like Magic🔮
-
-![https://media.giphy.com/media/NmerZ36iBkmKk/giphy.gif](https://media.giphy.com/media/NmerZ36iBkmKk/giphy.gif)
+CLI를 통해 하나의 명령문만 실행하면 Create React App이 환경 구성을 갖춰서 마법처럼 React 프로젝트를 생성해준다
+![giphy_1](./images/giphy_1.gif)
 
 ![screencast](./images/screencast.svg)
 
@@ -34,7 +33,7 @@ CLI를 통해 하나의 명령문만 실행하면 Create React App이 환경 구
 
 `Redux`, `Mobx`, `react-router`  등 기본적으로 많이 사용하는 보일러 플레이트들을 다시 설치하고
 
-파일 생성 ,디렉토리 생성, 스토어 연결, 라우터 설정등 `CRA`를 사용하고도 프로젝트를 설정하고 있는 자신을 볼 수 있을 것이다.
+파일 생성, 디렉토리 생성, 스토어 연결, 라우터 설정등 `CRA`를 사용하고도 프로젝트를 설정하고 있는 자신을 볼 수 있을 것이다.
 
 하지만 자주 사용하는 Library, Structure, Framework 가 적용된 React Template을 사용할 수 있다면...?
 
@@ -141,7 +140,7 @@ CRA 생생된 프로젝트 내부에 불필요한 파일 및 dependencies 삭제
 }
 ```
 
-여기까지 왔다면 이제 반절 했다..하얗게 불태우기엔 너무 멀었다
+여기까지 왔다면 이제 반절 했다..하얗게 불태우기엔 너무 멀었다🔥 
 
 ### template 폴더 생성
 
@@ -179,7 +178,7 @@ CRA 생생된 프로젝트 내부에 불필요한 파일 및 dependencies 삭제
 
 그런데 `.gitignore`는 프로젝트 레벨에 있는데 자연스럽게 들어가는 것일까?
 
-![https://media.giphy.com/media/3o7TKwmnDgQb5jemjK/giphy.gif](https://media.giphy.com/media/3o7TKwmnDgQb5jemjK/giphy.gif)
+![giphy_2](./images/giphy_2.gif)
 
 정답은 **NO** 입니다 🤨
 
@@ -255,7 +254,7 @@ yarn
 yarn create react-app %PROJECT_NAME% --template backoffice
 ```
 
-![https://media.giphy.com/media/g9582DNuQppxC/giphy.gif](https://media.giphy.com/media/g9582DNuQppxC/giphy.gif)
+![giphy_3](./images/giphy_3.gif)
 
 ### chore: NPM version 뱃지 붙이기
 

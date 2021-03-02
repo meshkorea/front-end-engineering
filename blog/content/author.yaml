@@ -31,9 +31,9 @@
   bio:
 - id: junwon.choi
   name: 최준원
-  avatar:
-  github:
-  bio:
+  avatar: avatars/juunone.jpeg
+  github: https://github.com/juunone
+  bio: 메쉬코리아 TMS 서비스의 Front-End 개발을 담당하고 있습니다.
 - id: minseok.suh
   name: 서민석
   avatar:
