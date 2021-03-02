@@ -13,7 +13,7 @@ const GithubProfileLink = ({ to, ...props }: GithubProfileLinkProps) => {
       sx={{
         display: "flex",
         width: ["15px", "24px"],
-        height: ["15", "24px"],
+        height: ["15px", "24px"],
         cursor: "pointer",
       }}
       {...props}
