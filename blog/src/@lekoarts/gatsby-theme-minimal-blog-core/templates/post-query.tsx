@@ -14,7 +14,6 @@ export const query = graphql`
         slug
       }
       description
-      canonicalUrl
       body
       excerpt
       timeToRead
@@ -24,7 +23,15 @@ export const query = graphql`
           ... on Mdx {
             id
             frontmatter {
-              author
+              author {
+                id
+                name
+                bio
+                github
+                avatar {
+                  publicURL
+                }
+              }
             }
           }
         }

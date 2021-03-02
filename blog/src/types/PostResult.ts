@@ -1,4 +1,5 @@
 import Tag from "./Tag";
+import Author from "./Author";
 
 type PostResult = {
   id: string;
@@ -14,7 +15,7 @@ type PostResult = {
   parent: {
     id: string;
     frontmatter: {
-      author: string;
+      author: Author;
     };
   };
 };
