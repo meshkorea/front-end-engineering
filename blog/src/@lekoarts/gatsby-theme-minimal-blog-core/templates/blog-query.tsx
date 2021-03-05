@@ -28,7 +28,7 @@ export const query = graphql`
                   author {
                     id
                     name
-                    bio 
+                    bio
                     avatar {
                       publicURL
                     }
