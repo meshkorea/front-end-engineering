@@ -3,11 +3,14 @@
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/event-loop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/cra-custom-template</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/introduce-web-front-end-team-blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/tags/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/tags/create-react-app</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/tags/event-loop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/tags/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/tags/npm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mesh.dev/front-end-engineering/front-end-engineering/tags/team</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
