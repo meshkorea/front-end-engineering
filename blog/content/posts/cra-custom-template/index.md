@@ -23,9 +23,7 @@ Create React App은 React 앱을 빌드하고 개발 환경을 구축 시 엄청
 CLI를 통해 하나의 명령문만 실행하면 Create React App이 환경 구성을 갖춰서 마법처럼 React 프로젝트를 생성해준다
 ![giphy_1](./images/giphy_1.gif)
 
-![screencast](./images/screencast.svg)
-
-출처: [https://create-react-app.dev/docs/getting-started](https://create-react-app.dev/docs/getting-started)
+![screencast](./images/screencast.svg "출처: https://create-react-app.dev/docs/getting-started")
 
 ### Custom CRA Template는 어떻게 활용할 수 있을까?
 
