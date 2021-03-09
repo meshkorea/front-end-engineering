@@ -16,9 +16,9 @@
   bio:
 - id: yongbeen.im
   name: 임용빈
-  avatar:
-  github:
-  bio:
+  avatar: avatars/yongbeen.im.png
+  github: https://github.com/jungpaeng
+  bio: 메쉬코리아의 운영 이슈를 처리하고 있습니다.
 - id: songwon.park
   name: 박송원
   avatar:
