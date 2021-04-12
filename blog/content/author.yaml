@@ -9,11 +9,11 @@
 # 다음은 선택 필드 입니다.
 # - github: 자랑하고 싶은 깃헙 프로필 주소를 작성해주세요!
 # --------------------------------------------------------------------
-- id: taegon.choi
+- id: taegeon.choi
   name: 최태건
-  avatar:
-  github:
-  bio:
+  avatar: avatars/taegeon.choi.jpg
+  github: https://github.com/mindfull
+  bio: 메쉬코리아 웹프론트엔드팀의 팀장과 K팝 처돌이를 맡고있습니다.
 - id: yongbeen.im
   name: 임용빈
   avatar: avatars/yongbeen.im.png
