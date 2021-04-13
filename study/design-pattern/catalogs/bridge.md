@@ -66,4 +66,4 @@ Implementor: 구현
 
 그럼 A, B, C를 모스 부호로 표현하고자 할 때 어떻게 설계 할 수 있을까요?
 
-확인: [https://github.com/Pewww/WIL/bridge_pattern](https://github.com/Pewww/WIL/tree/master/20210315)
+확인: [Bridge Pattern Example](https://github.com/Pewww/WIL/tree/master/20210315)
