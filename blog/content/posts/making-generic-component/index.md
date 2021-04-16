@@ -2,7 +2,7 @@
 slug: "/making-generic-component"
 title: 제네릭 타입을 사용하는 리액트 드랍다운을 만들어 보자
 date: 2021-04-15
-author: 서민석
+author: minseok.suh
 description: 타입스크립트 제네릭 문법을 사용하여 리액트 컴포넌트 내의 데이터를 명확하게 하고 싶었습니다.
 tags:
   - React
@@ -54,7 +54,7 @@ value와 options props들에 제네릭 타입을 적용시켜준다.
 
 ![dropdownprops](./dropdownprops.png)
 
-그리고 그 제네릭 타입을 내려내려줘서 옵션의 value로 설정해준다.
+그리고 그 제네릭 타입을 내려줘서 옵션의 value로 설정해준다.
 
 ![optionT](./optionT.png)
 
