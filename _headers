@@ -62,6 +62,15 @@
   Link: </front-end-engineering/component---src-lekoarts-gatsby-theme-minimal-blog-core-templates-tags-query-tsx-b7bf081b99736cd22548.js>; rel=preload; as=script
   Link: </front-end-engineering/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </front-end-engineering/page-data/tags/page-data.json>; rel=preload; as=fetch; crossorigin
+/front-end-engineering/making-generic-component
+  Link: </front-end-engineering/webpack-runtime-1ec8a99c562e85a3efd5.js>; rel=preload; as=script
+  Link: </front-end-engineering/framework-cd3e1e804d552fa282ef.js>; rel=preload; as=script
+  Link: </front-end-engineering/app-0592384e23d45535b9ca.js>; rel=preload; as=script
+  Link: </front-end-engineering/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </front-end-engineering/f1c02805913fbd9328cd109a4b1d601af0fcdbee-ea1398967f5ab3eb99bc.js>; rel=preload; as=script
+  Link: </front-end-engineering/component---src-lekoarts-gatsby-theme-minimal-blog-core-templates-post-query-tsx-e78f9c58ca012fa7f1c2.js>; rel=preload; as=script
+  Link: </front-end-engineering/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </front-end-engineering/page-data/making-generic-component/page-data.json>; rel=preload; as=fetch; crossorigin
 /front-end-engineering/event-loop
   Link: </front-end-engineering/webpack-runtime-1ec8a99c562e85a3efd5.js>; rel=preload; as=script
   Link: </front-end-engineering/framework-cd3e1e804d552fa282ef.js>; rel=preload; as=script
@@ -107,6 +116,15 @@
   Link: </front-end-engineering/component---src-lekoarts-gatsby-theme-minimal-blog-core-templates-tag-query-tsx-a38ab0d59eb7761f6172.js>; rel=preload; as=script
   Link: </front-end-engineering/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </front-end-engineering/page-data/tags/react/page-data.json>; rel=preload; as=fetch; crossorigin
+/front-end-engineering/tags/typescript
+  Link: </front-end-engineering/webpack-runtime-1ec8a99c562e85a3efd5.js>; rel=preload; as=script
+  Link: </front-end-engineering/framework-cd3e1e804d552fa282ef.js>; rel=preload; as=script
+  Link: </front-end-engineering/app-0592384e23d45535b9ca.js>; rel=preload; as=script
+  Link: </front-end-engineering/styles-e9d24b1846c7d6eb9685.js>; rel=preload; as=script
+  Link: </front-end-engineering/f1c02805913fbd9328cd109a4b1d601af0fcdbee-ea1398967f5ab3eb99bc.js>; rel=preload; as=script
+  Link: </front-end-engineering/component---src-lekoarts-gatsby-theme-minimal-blog-core-templates-tag-query-tsx-a38ab0d59eb7761f6172.js>; rel=preload; as=script
+  Link: </front-end-engineering/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </front-end-engineering/page-data/tags/typescript/page-data.json>; rel=preload; as=fetch; crossorigin
 /front-end-engineering/tags/create-react-app
   Link: </front-end-engineering/webpack-runtime-1ec8a99c562e85a3efd5.js>; rel=preload; as=script
   Link: </front-end-engineering/framework-cd3e1e804d552fa282ef.js>; rel=preload; as=script
