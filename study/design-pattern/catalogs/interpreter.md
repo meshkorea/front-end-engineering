@@ -15,8 +15,6 @@
 
 ## 👨‍👩‍👧‍👦 참여자
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/087b1af2-b286-442e-ab2c-a6bd7e6ea643/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/087b1af2-b286-442e-ab2c-a6bd7e6ea643/Untitled.png)
-
 1. AbstractExpression
 2. TerminalExpression
 3. NonterminalExpression
@@ -35,8 +33,6 @@
 1. 추상 구문 트리를 생성합니다.
 
    - a + b \* c + d
-
-     ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60ba90ee-c36a-4e36-96ec-43d1a1f2e8e0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60ba90ee-c36a-4e36-96ec-43d1a1f2e8e0/Untitled.png)
 
 2. Interpret() 연산을 정의합니다.
 3. 플라이급 패턴을 적용하여 단말 기호를 공유합니다.
