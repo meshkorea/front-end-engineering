@@ -105,6 +105,8 @@ function run() {
 }
 ```
 
+> 출처: https://www.dofactory.com/javascript/design-patterns/mediator
+
 **실행 결과** 값
 
 ```
