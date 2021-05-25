@@ -18,10 +18,10 @@ TL;DR
 
 ## 🧐 우리 상황에 맞게 풀어 쓴 동기
 
-- core
-  - 앱 전역에서 알아야 하는 dialog, auth, popup, router가 정의돼있습니다.
-- lib
-  - 앱의 여러 곳에서 사용되는 코드들이 구조화되어 있습니다.
+- MCP
+  - [https://github.com/meshkorea/mesh-control-platform-api](https://github.com/meshkorea/mesh-control-platform-api)
+- BFF
+  - Back-End for Front-End
 
 ## 🛠 활용성 및 결과: 이럴 때 씁니다
 
@@ -125,15 +125,6 @@ Ringo to Paul: Paul, what do you think?
 
 ## 😀 우리가 사용한 예시 (또는 우리가 사용했다면...)
 
-```tsx
-//Core.ts
-export default class Core {
-  public auth = new Auth(this);
+![bff](https://user-images.githubusercontent.com/35126809/119456092-41eff400-bd75-11eb-8361-c8ff85ba20e5.png)
 
-  public dialog = new Dialog();
-
-  public router = new Router();
-
-  public popUp = new PopUp();
-}
-```
+> 출처: https://seungdols.tistory.com/865
