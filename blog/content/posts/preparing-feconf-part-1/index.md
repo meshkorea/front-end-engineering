@@ -15,9 +15,8 @@ tags:
 
 본격적인 이야기에 앞서, 발표했던 영상을 첨부해본다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J4JHLESAiFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-*튀어나온 옷깃과... 불안한 눈빛과... 그걸 지켜보는 나...*
+<iframe style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/J4JHLESAiFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption>튀어나온 옷깃과... 불안한 눈빛과... 그걸 지켜보는 나...</figcaption>
 
 ## 발표 제안하기
 
@@ -43,8 +42,7 @@ OpenAPI Specification은 자바스크립트 커뮤니티에서 한국어로 글�
 
 OpenAPI Specification이라는 기술 자체가 주위의 개발자들에게 워낙 생소하다 보니, 나도 이들처럼 포장을 해야겠다고 생각했다. 하지만, 포장은 그냥 한다고 되는 것이 아니다. 명품을 비닐봉지로 포장할 수도 없는 것이고, 마트 상품을 박스로 정성스레 포장할 수도 없는 노릇이다. 이 발표를 듣는 사람, 그리고 그들이 필요로 하는 것을 적확하게 긁어줄 수 있도록 발표를 구성해야 했다.
 
-![조 말론 쇼핑백](./image_1.jpg)
-*조 말론은 완충용 종이에도 향수를 뿌려주고, 매장에서 정성스럽게 리본 포장을 해주는 것으로 유명하다.*
+![조 말론 쇼핑백](./image_1.jpg "조 말론은 완충용 종이에도 향수를 뿌려주고, 매장에서 정성스럽게 리본 포장을 해주는 것으로 유명하다.")
 
 먼저, 이 발표의 타겟을 설정했다. 어쨌든, OpenAPI Specification은 전통적인 RESTful API를 위한 도구다. 물론 API에는 GraphQL부터 gRPC까지 다양한 대안이 있는 것이 맞다. 하지만 가장 전통적이고, 서버 개발자들이 가장 익숙해하는 것이 RESTful API인 것은 엄연한 현실이다. GraphQL을 쓰자고 설득하는 것이 조금 어려운 것이 아니니 말이다. 그래서 이 발표의 타겟을 "현업에서 RESTful API를 사용하고 있지만 개발에 불만족하는 사람"으로 꼽았다.
 
@@ -54,8 +52,7 @@ OpenAPI Specification이라는 기술 자체가 주위의 개발자들에게 워
 
 이런 생각을 바탕으로 이 발표의 제목을 정했다. 여러 사람들의 의견을 들으며 조금씩 워딩을 조정했고, 덕분에 약간 미디엄식 click bait 같긴 하지만 어쨌든 현실은 잘 반영하고 있는 제목을 확정했다. 그 제목이 바로 여러분도 보셨을 "OpenAPI Specification으로 타입-세이프하게 API 개발하기: 희망 편 vs 절망 편"이었다.
 
-![이것이 미래세계다! 희망 편, 파멸 편](./image_2.jpg)
-*뭐? 절망 편이 아니라 파멸 편이라고??*
+![이것이 미래세계다! 희망 편, 파멸 편](./image_2.jpg "뭐? 절망 편이 아니라 파멸 편이라고??")
 
 ### 발표 내용 구성하기
 
