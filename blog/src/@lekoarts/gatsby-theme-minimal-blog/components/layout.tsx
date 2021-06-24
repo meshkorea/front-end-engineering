@@ -1,17 +1,17 @@
 /** @jsx jsx */
-import React from "react"
+import React from "react";
 import { MDXProvider } from "@mdx-js/react";
-import { Global } from "@emotion/core"
-import { Box, Container, jsx, ImageProps } from "theme-ui"
-import "typeface-ibm-plex-sans"
+import { Global } from "@emotion/core";
+import { Box, Container, jsx, ImageProps } from "theme-ui";
+import "typeface-ibm-plex-sans";
 import SEO from "@lekoarts/gatsby-theme-minimal-blog/src/components/seo";
 import Header from "./header";
 import Footer from "@lekoarts/gatsby-theme-minimal-blog/src/components/footer";
 import CodeStyles from "@lekoarts/gatsby-theme-minimal-blog/src/styles/code";
 import SkipNavLink from "@lekoarts/gatsby-theme-minimal-blog/src/components/skip-nav";
-import Gif from "components/Gif";
+import ImageWithCaption from "components/Image";
 
-type LayoutProps = { children: React.ReactNode; className?: string }
+type LayoutProps = { children: React.ReactNode; className?: string };
 
 const Layout = ({ children, className = `` }: LayoutProps) => (
   <React.Fragment>
@@ -41,6 +41,12 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           transition: `all 0.3s ease-in-out`,
           color: `text`,
         },
+        figcaption: {
+          marginBottom: "50px",
+          color: "#8d8d8d",
+          textAlign: "center",
+          fontStyle: "italic",
+        },
       })}
     />
     <SEO />
@@ -48,21 +54,17 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     <Container>
       <Header />
       <Box id="skip-nav" sx={{ ...CodeStyles }} className={className}>
-        <MDXProvider components={{
-          img: (props: ImageProps) => {
-            if (props.src?.match(/.*?\.(gif|svg)/)) {
-              return <Gif {...props} />
-            }
-
-            return <img src={props.src} {...props} />
-          }
-        }}>
-          {children} 
+        <MDXProvider
+          components={{
+            img: (props: ImageProps) => <Image {...props} />,
+          }}
+        >
+          {children}
         </MDXProvider>
       </Box>
       <Footer />
     </Container>
   </React.Fragment>
-)
+);
 
-export default Layout
+export default Layout;
