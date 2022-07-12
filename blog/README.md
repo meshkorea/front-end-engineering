@@ -1,5 +1,9 @@
 # Mesh Front-end Team Blog
 
+> :warning: Deprecated: 메쉬코리아 웹 프론트엔드 팀 블로그의 주소가 [이전](https://medium.com/mesh-korea-fe-team-blog)되었습니다.
+
+<br>
+
 메쉬코리아 웹 프론트엔드 팀에서 운영하는 블로그 입니다! [구경하기](https://mesh.dev/front-end-engineering)
 
 ## 무엇으로 만들어졌나요?
